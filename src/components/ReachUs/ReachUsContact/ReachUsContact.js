@@ -15,7 +15,7 @@ function ReachUsContact() {
         <div className='conatiner text-6xl my-5'>
           <b>Find us here. Make real results happen.</b>
         </div>
-        <div className='grid grid-cols-2 gap-5'>
+        <div className='grid grid-cols-2 gap-5 mt-8'>
           <div className='container'>
             <div className='flex justify-between'>
               <div>
@@ -76,7 +76,79 @@ function ReachUsContact() {
           </div>
         </div>
       </div>
-      <div className='container p-2'></div>
+      <div className='container p-2'>
+        <div className="container form-custom-class px-4 py-8">
+          <form>
+            <div className='container text-3xl text-center pb-9'><b>Ask Question or Get Quote</b></div>
+            <div className='container flex justify-around'>
+              <div className='container relative'>
+                <input
+                  className='h-12 w-64 p-2 bg-white rounded'
+                  placeholder='Full Name'
+                />
+                <img
+                  src='/form_name.svg'
+                  alt='name'
+                  className=' absolute top-3 right-6'
+                />
+              </div>
+              <div className='container relative'>
+                <input
+                  className='h-12 w-64 p-2 bg-white input-tag-custom rounded'
+                  placeholder='Email Address'
+                />
+                <img
+                  src='/form_email.svg'
+                  alt='name'
+                  className=' absolute top-3 right-6'
+                />
+              </div>
+            </div>
+            <div className='container flex justify-around mt-14'>
+              <div className='container relative'>
+                <input
+                  className='h-12 w-64 p-2 bg-white  rounded'
+                  placeholder='Phone Number'
+                />
+                <img
+                  src='/form_arrow.svg'
+                  alt='name'
+                  className=' absolute top-3 right-6'
+                />
+              </div>
+              <div className='container relative'>
+                <input
+                  className='h-12 w-64 p-2 bg-white rounded input-tag-custom'
+                  placeholder='Language'
+                />
+                <img
+                  src='/form_down.svg'
+                  alt='name'
+                  className=' absolute top-4 right-3'
+                />
+              </div>
+            </div>
+            <div className='container mt-14 relative'>
+              <textarea
+                placeholder='Questions'
+                rows="4"
+                cols="63"
+                className='p-2'
+              />
+              <img
+                src='/form_write.svg'
+                alt='name'
+                className=' absolute top-2 right-4'
+              />
+            </div>
+            <div className='container mt-12 flex justify-center'>
+              <button className='custom-btn-contact-form py-3 rounded px-56'>
+                Get Quote
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   )
 }
