@@ -81,13 +81,6 @@ function Header() {
                         <b>
                             <Link className="header-text-color text-xl font-bold cursor-pointer underline-animation">Reach us</Link>
                         </b>
-                        <div className="login-icon-con cursor-pointer">
-                            <img
-                                src='/login_icon.png'
-                                alt="Login"
-                                className="logo-class"
-                            />
-                        </div>
                     </div>
                 </div>
             </div>
@@ -104,12 +97,6 @@ function Header() {
                         <b>
                             <Link className="header-text-color text-2xl font-bold cursor-pointer ml-5 underline-animation">Our Services</Link>
                         </b>
-                    </div>
-                    <div className="container flex justify-end ">
-                        <input
-                            className="outline-none placeholder-orange-500 pl-[5px] placeholder:text-lg rounded h-10 mt-2"
-                            placeholder="Search"
-                        />
                     </div>
                 </div>
             </div>
