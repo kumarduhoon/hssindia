@@ -7,7 +7,7 @@ function ReachUsContact() {
       <div className='container p-2'>
         <div className='container max-w-full'>
           <img
-            src='/reach_us_contact.webp'
+            src='/reach_us_catch.png'
             alt='reach us contact'
             className='w-full'
           />

@@ -1,12 +1,13 @@
 import React from 'react'
 import "./HomeAbout.scss"
+import { StaticImage } from 'gatsby-plugin-image'
 
 function HomeAbout() {
   return (
     <div className='relative'>
-      <div className='max-w-full'>
-        <img
-          src='/home_hero.jpg'
+      <div className='w-full'>
+        <StaticImage
+          src='../../../static/home_about.png'
           alt="Logo"
           className="home-about-class"
         />

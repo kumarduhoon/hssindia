@@ -9,14 +9,16 @@ function WhyHssVerticalCard() {
         <div className=" container  max-w-5xl  m-auto mt-16 flex gap-10 justify-between">
           <div className='flex flex-col'>
             <div className='container relative card_custom_css rounded p-5 pt-12'>
-              <div className='container absolute card_image max-w-14 verical_card_css left-32'>
+              <div className='container absolute card_image max-w-14 verical_card_css_6'>
                 <img
-                  src='/guarantee.png'
+                  src='/why_hss_6.png'
                   alt='guarantee'
+                  className='verical_card_css_6_img'
                 />
               </div>
               <div className='container'>
-                <p >
+                <div className='text-orange-600 text-lg mb-2 text-center'>Consistently Reliable</div>
+                <p>
                   We will be happy to provide Pre-Dispatch Inspection (PDI) Report and a material test certificate for all raw materials used in the manufacturing of your order, upon request with every lot.
                 </p>
                 <p className='mt-3'>
@@ -51,13 +53,14 @@ function WhyHssVerticalCard() {
               </div>
             </div>
             <div className='container relative card_custom_css rounded mt-16 p-5 pt-12'>
-              <div className='container absolute card_image verical_card_css left-32'>
+              <div className='container absolute card_image verical_card_css_5'>
                 <img
-                  src='/guarantee.png'
+                  src='/why_hss_5.png'
                   alt='guarantee'
                 />
               </div>
               <div className='container'>
+                <div className='text-orange-600 text-lg mb-2 text-center'>Experience of 50 years</div>
                 <p >
                   HSS has been manufacturing fluid conveyance products for more than 5 decades, which means 50 years of technical know-how and experience with products in their most diverse applications. Our production facilities and equipment benefit from state of-the-art technology and a motivated team of technocrats
                 </p>
@@ -66,13 +69,14 @@ function WhyHssVerticalCard() {
           </div>
           <div>
             <div className='container relative card_custom_css rounded p-5 pt-12'>
-              <div className='container absolute card_image max-w-14 verical_card_css left-32'>
+              <div className='container absolute card_image max-w-14 verical_card_css_8'>
                 <img
-                  src='/guarantee.png'
+                  src='/why_hss_8.png'
                   alt='guarantee'
                 />
               </div>
               <div className='container'>
+                <div className='text-orange-600 text-lg mb-2 text-center'>Premium Quality</div>
                 <p >
                   We offer interchangeability and very close dimensional tolerances of all our parts so that the end customer is able to conduct preventive and breakdown maintenance of their equipment easily. HSS Fittings are manufactured:
                 </p>
