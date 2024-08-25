@@ -1,0 +1,18 @@
+.pressure-table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-header,
+.table-data {
+  border: 2px solid black;
+  text-align: left;
+  padding: 8px;
+  padding-left: 6px;
+}
+
+.table-row:nth-child(even) {
+  background-color: #ff7300;
+  color: white;
+}

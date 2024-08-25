@@ -51,3 +51,7 @@ body {
   color: #ff7300;
   ;
 }
+
+ul {
+  list-style: disc
+}

@@ -6,7 +6,7 @@ function WhyHSSHeros() {
   return (
     <div className='w-full'>
       <StaticImage
-        src='../../../../static/whyhss.webp'
+        src='../../../../static/whyhss.png'
         alt=' why hss'
       />
     </div>

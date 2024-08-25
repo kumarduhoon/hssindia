@@ -32,10 +32,10 @@ function Header() {
                         <b>
                             <Link className="header-text-color text-xl font-bold cursor-pointer underline-animation">Why HSS</Link>
                         </b>
-                        <div className=" group relative cursor-pointer">
+                        <div className="group relative cursor-pointer">
                             <div className="flex items-center justify-between space-x-2 px-4">
                                 <b>
-                                    <Link className="header-text-color text-xl font-bold cursor-pointer menu-hover">Techical</Link>
+                                    <Link className="header-text-color text-xl font-bold cursor-pointer menu-hover">Technical</Link>
                                 </b>
                                 <span>
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -44,40 +44,21 @@ function Header() {
                                     </svg>
                                 </span>
                             </div>
-
                             <div
-                                class="invisible absolute z-50 flex flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible left-6">
+                                className="absolute left-8 z-50 mt-2 flex flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl opacity-0 transform scale-y-0 group-hover:opacity-100 group-hover:scale-y-100 group-hover:visible transition-all duration-300 origin-top invisible w-36 group-hover:w-72">
 
-                                <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                                    Sunday
-                                </a>
-
-                                <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                                    Monday
-                                </a>
-
-                                <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                                    Tuesday
-                                </a>
-
-                                <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                                    Wednesday
-                                </a>
-
-                                <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                                    Thursday
-                                </a>
-
-                                <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                                    Friday
-                                </a>
-
-                                <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                                    Saturday
-                                </a>
-
+                                <Link className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2 ">
+                                    Crimping Chart
+                                </Link>
+                                <Link className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                                    Non Skive vs Skive Fittings.
+                                </Link>
+                                <Link className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                                    Tube Fittings Comparison
+                                </Link>
                             </div>
                         </div>
+
                         <b>
                             <Link className="header-text-color text-xl font-bold cursor-pointer underline-animation">Reach us</Link>
                         </b>
