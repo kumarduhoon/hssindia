@@ -22,7 +22,11 @@ function Footer() {
                                         className="mt-1"
                                     />
                                 </div>
-                                <Link className="text-white ml-1 cursor-pointer underline-animation-light">Hose Fittings</Link>
+                                <Link
+                                    to="/hose-fittings"
+                                    className="text-white ml-1 cursor-pointer hover:text-orange-600"
+                                    activeClassName="active-footer"
+                                >Hose Fittings</Link>
                             </div>
                             <div className="container flex justify-start mt-3">
                                 <div className="w-4">
@@ -32,7 +36,11 @@ function Footer() {
                                         className="mt-1"
                                     />
                                 </div>
-                                <Link className="text-white ml-1 cursor-pointer underline-animation-light">Adaptors</Link>
+                                <Link
+                                    to="/adaptors"
+                                    className="text-white ml-1 cursor-pointer hover:text-orange-600"
+                                    activeClassName="active-footer"
+                                >Adaptors</Link>
                             </div>
                             <div className="container flex mt-3 justify-start">
                                 <div className="w-4">
@@ -42,7 +50,11 @@ function Footer() {
                                         className="mt-1"
                                     />
                                 </div>
-                                <Link className="text-white ml-1 cursor-pointer underline-animation-light">Accessories</Link>
+                                <Link
+                                    to="/accessories"
+                                    className="text-white ml-1 cursor-pointer hover:text-orange-600"
+                                    activeClassName="active-footer"
+                                >Accessories</Link>
                             </div>
                             <div className="container flex mt-3 justify-start">
                                 <div className="w-4">
@@ -52,7 +64,11 @@ function Footer() {
                                         className="mt-1"
                                     />
                                 </div>
-                                <Link className="text-white ml-1 cursor-pointer underline-animation-light">Tube Fittings</Link>
+                                <Link
+                                    to="/tube-fitting"
+                                    className="text-white ml-1 cursor-pointer hover:text-orange-600"
+                                    activeClassName="active-footer"
+                                >Tube Fittings</Link>
                             </div>
                             <div className="container flex mt-3 justify-start">
                                 <div className="w-4">
@@ -62,7 +78,11 @@ function Footer() {
                                         className="mt-1"
                                     />
                                 </div>
-                                <Link className="text-white ml-1 cursor-pointer underline-animation-light">SAE Flanges</Link>
+                                <Link
+                                    to="/sae-flanges"
+                                    className="text-white ml-1 cursor-pointer hover:text-orange-600"
+                                    activeClassName="active-footer"
+                                >SAE Flanges</Link>
                             </div>
                         </div>
                     </div>
@@ -76,7 +96,11 @@ function Footer() {
                                         className="mt-1"
                                     />
                                 </div>
-                                <Link className="text-white ml-1 cursor-pointer underline-animation-light">Tube Assemblies</Link>
+                                <Link
+                                    to="/tube-assemblies"
+                                    className="text-white ml-1 cursor-pointer hover:text-orange-600"
+                                    activeClassName="active-footer"
+                                >Tube Assemblies</Link>
                             </div>
                             <div className="container flex mt-3 justify-start">
                                 <div className="w-4">
@@ -86,7 +110,11 @@ function Footer() {
                                         className="mt-1"
                                     />
                                 </div>
-                                <Link className="text-white ml-1 cursor-pointer underline-animation-light">Tube Clamps</Link>
+                                <Link
+                                    to="/tube-clamps"
+                                    className="text-white ml-1 cursor-pointer hover:text-orange-600"
+                                    activeClassName="active-footer"
+                                >Tube Clamps</Link>
                             </div>
                             <div className="container flex mt-3 justify-start">
                                 <div className="w-4">
@@ -96,7 +124,11 @@ function Footer() {
                                         className="mt-1"
                                     />
                                 </div>
-                                <Link className="text-white ml-1 cursor-pointer underline-animation-light">Spools</Link>
+                                <Link
+                                    to="/spools"
+                                    className="text-white ml-1 cursor-pointer hover:text-orange-600"
+                                    activeClassName="active-footer"
+                                >Spools</Link>
                             </div>
                             <div className="container flex mt-3 justify-start">
                                 <div className="w-4">
@@ -106,7 +138,11 @@ function Footer() {
                                         className="mt-1"
                                     />
                                 </div>
-                                <Link className="text-white ml-1 cursor-pointer underline-animation-light">Hydraulic Manifolds</Link>
+                                <Link
+                                    to="/hydraulic-manifolds"
+                                    className="text-white ml-1 cursor-pointer hover:text-orange-600"
+                                    activeClassName="active-footer"
+                                >Hydraulic Manifolds</Link>
                             </div>
                             <div className="container flex mt-3 justify-start">
                                 <div className="w-4">
@@ -116,7 +152,11 @@ function Footer() {
                                         className="mt-1"
                                     />
                                 </div>
-                                <Link className="text-white ml-1 cursor-pointer underline-animation-light">Ball Valves</Link>
+                                <Link
+                                    to="/ball-valves-qrc"
+                                    className="text-white ml-1 cursor-pointer hover:text-orange-600"
+                                    activeClassName="active-footer"
+                                >Ball Valves</Link>
                             </div>
                         </div>
                     </div>
@@ -131,7 +171,11 @@ function Footer() {
                                         className="mt-1"
                                     />
                                 </div>
-                                <Link className="text-white ml-1 cursor-pointer underline-animation-light">Company</Link>
+                                <Link
+                                    to="/about"
+                                    className="text-white ml-1 cursor-pointer hover:text-orange-600"
+                                    activeClassName="active-footer"
+                                >Company</Link>
                             </div>
                             <div className="container flex mt-3 justify-start">
                                 <div className="w-4">
@@ -141,7 +185,11 @@ function Footer() {
                                         className="mt-1"
                                     />
                                 </div>
-                                <Link className="text-white ml-1 cursor-pointer underline-animation-light">Careers</Link>
+                                <Link
+                                    to="/careers"
+                                    className="text-white ml-1 cursor-pointer hover:text-orange-600"
+                                    activeClassName="active-footer"
+                                >Careers</Link>
                             </div>
                             <div className="container flex mt-3 justify-start">
                                 <div className="w-4">
@@ -151,7 +199,11 @@ function Footer() {
                                         className="mt-1"
                                     />
                                 </div>
-                                <Link className="text-white ml-1 cursor-pointer underline-animation-light">Get Quote</Link>
+                                <Link
+                                    to="/contact"
+                                    className="text-white ml-1 cursor-pointer hover:text-orange-600"
+                                    activeClassName="active-footer"
+                                >Get Quote</Link>
                             </div>
                             <div className="container flex mt-3 justify-start">
                                 <div className="w-4">
@@ -161,7 +213,11 @@ function Footer() {
                                         className="mt-1"
                                     />
                                 </div>
-                                <Link className="text-white ml-1 cursor-pointer underline-animation-light">Market</Link>
+                                <Link
+                                    to="/market"
+                                    className="text-white ml-1 cursor-pointer hover:text-orange-600"
+                                    activeClassName="active-footer"
+                                >Market</Link>
                             </div>
                             <div className="container flex mt-3 justify-start">
                                 <div className="w-4">
@@ -171,9 +227,13 @@ function Footer() {
                                         className="mt-1"
                                     />
                                 </div>
-                                <Link className="text-white ml-1 cursor-pointer underline-animation-light">Services</Link>
+                                <Link
+                                    to="/our-services"
+                                    className="text-white ml-1 cursor-pointer hover:text-orange-600"
+                                    activeClassName="active-footer"
+                                >Services</Link>
                             </div>
-                            <div className="container flex mt-3 justify-start">
+                            {/* <div className="container flex mt-3 justify-start">
                                 <div className="w-4">
                                     <img
                                         src="/right_arrow.png"
@@ -181,8 +241,10 @@ function Footer() {
                                         className="mt-1"
                                     />
                                 </div>
-                                <Link className="text-white ml-1 cursor-pointer underline-animation-light">Support</Link>
-                            </div>
+                                <Link
+                                    to="/contact"
+                                    className="text-white ml-1 cursor-pointer underline-animation-light">Support</Link>
+                            </div> */}
                         </div>
 
                     </div>
