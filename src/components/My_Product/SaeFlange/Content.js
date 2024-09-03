@@ -1,5 +1,9 @@
 import React from 'react'
 import ListCard from '../Accessories/ListCard'
+import saeFlangeOne from "../../../../static/sae_one.jpg"
+import saeFlangeTwo from "../../../../static/sae_two.jpg"
+import saeFlangeThree from "../../../../static/sae_three.jpg"
+import saeFlangeFour from "../../../../static/sae_four.jpg"
 
 function Content() {
   return (
@@ -24,25 +28,25 @@ function Content() {
             <div className='flex justify-evenly'>
               <div className='mr-2'>
                 <img
-                  src='/sae_one.jpg'
+                  src={saeFlangeOne}
                   alt="box one"
                 />
               </div>
               <div className='ml-2 mr-2'>
                 <img
-                  src='/sae_two.jpg'
-                  alt='adaptors four'
+                  src={saeFlangeTwo}
+                  alt='box four'
                 />
               </div>
               <div className='ml-2 mr-2'>
                 <img
-                  src='/sae_three.jpg'
-                  alt='adaptors four'
+                  src={saeFlangeThree}
+                  alt='box four'
                 />
               </div>
               <div className='ml-2'>
                 <img
-                  src='/sae_four.jpg'
+                  src={saeFlangeFour}
                   alt='adaptors five'
                 />
               </div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import ListCard from '../Accessories/ListCard'
+import tubeFitting from "../../../../static/tube_fitting_one.png"
 
 function Content() {
   return (
@@ -17,7 +18,7 @@ function Content() {
             <div className='flex justify-start'>
               <div className='mr-2'>
                 <img
-                  src='/tube_fitting_one.png'
+                  src={tubeFitting}
                   alt="box one"
                 />
               </div>

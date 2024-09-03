@@ -1,5 +1,8 @@
 import React from 'react'
 import './WhyHssVerticalCard.scss'
+import whyHssOne from "../../../../static/why_hss_6.png"
+import whyHssTwo from "../../../../static/why_hss_5.png"
+import whyHssThree from "../../../../static/why_hss_8.png"
 
 function WhyHssVerticalCard() {
   return (
@@ -11,7 +14,7 @@ function WhyHssVerticalCard() {
             <div className='container relative card_custom_css rounded p-5 pt-12'>
               <div className='container absolute card_image max-w-14 verical_card_css_6'>
                 <img
-                  src='/why_hss_6.png'
+                  src={whyHssOne}
                   alt='guarantee'
                   className='verical_card_css_6_img'
                 />
@@ -55,7 +58,7 @@ function WhyHssVerticalCard() {
             <div className='container relative card_custom_css rounded mt-16 p-5 pt-12'>
               <div className='container absolute card_image verical_card_css_5'>
                 <img
-                  src='/why_hss_5.png'
+                  src={whyHssTwo}
                   alt='guarantee'
                 />
               </div>
@@ -71,7 +74,7 @@ function WhyHssVerticalCard() {
             <div className='container relative card_custom_css rounded p-5 pt-12'>
               <div className='container absolute card_image max-w-14 verical_card_css_8'>
                 <img
-                  src='/why_hss_8.png'
+                  src={whyHssThree}
                   alt='guarantee'
                 />
               </div>

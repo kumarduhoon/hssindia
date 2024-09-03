@@ -5,8 +5,8 @@ function Hero() {
   return (
     <div className='w-full'>
       <StaticImage
-        src='../../../../static/spools_hero.png'
-        alt='adaptor hero'
+        src='../../../../static/spools.png'
+        alt='spools hero'
       />
     </div>
   )

@@ -1,6 +1,12 @@
 import React from "react";
 import "./Footer.scss"
 import { Link } from "gatsby";
+import arrow from "../../../static/right_arrow.png"
+import address from "../../../static/address.png"
+import email from "../../../static/email.png"
+import phone from "../../../static/phone.png"
+import footerImage from "../../../static/footer_img.png"
+import copyright from "../../../static/copyright.svg"
 
 function Footer() {
     return (
@@ -17,7 +23,7 @@ function Footer() {
                             <div className="container flex justify-start">
                                 <div className="w-4">
                                     <img
-                                        src="/right_arrow.png"
+                                        src={arrow}
                                         alt="right arrow"
                                         className="mt-1"
                                     />
@@ -31,7 +37,7 @@ function Footer() {
                             <div className="container flex justify-start mt-3">
                                 <div className="w-4">
                                     <img
-                                        src="/right_arrow.png"
+                                        src={arrow}
                                         alt="right arrow"
                                         className="mt-1"
                                     />
@@ -45,7 +51,7 @@ function Footer() {
                             <div className="container flex mt-3 justify-start">
                                 <div className="w-4">
                                     <img
-                                        src="/right_arrow.png"
+                                        src={arrow}
                                         alt="right arrow"
                                         className="mt-1"
                                     />
@@ -59,7 +65,7 @@ function Footer() {
                             <div className="container flex mt-3 justify-start">
                                 <div className="w-4">
                                     <img
-                                        src="/right_arrow.png"
+                                        src={arrow}
                                         alt="right arrow"
                                         className="mt-1"
                                     />
@@ -73,7 +79,7 @@ function Footer() {
                             <div className="container flex mt-3 justify-start">
                                 <div className="w-4">
                                     <img
-                                        src="/right_arrow.png"
+                                        src={arrow}
                                         alt="right arrow"
                                         className="mt-1"
                                     />
@@ -91,7 +97,7 @@ function Footer() {
                             <div className="container flex justify-start">
                                 <div className="w-4">
                                     <img
-                                        src="/right_arrow.png"
+                                        src={arrow}
                                         alt="right arrow"
                                         className="mt-1"
                                     />
@@ -105,7 +111,7 @@ function Footer() {
                             <div className="container flex mt-3 justify-start">
                                 <div className="w-4">
                                     <img
-                                        src="/right_arrow.png"
+                                        src={arrow}
                                         alt="right arrow"
                                         className="mt-1"
                                     />
@@ -119,7 +125,7 @@ function Footer() {
                             <div className="container flex mt-3 justify-start">
                                 <div className="w-4">
                                     <img
-                                        src="/right_arrow.png"
+                                        src={arrow}
                                         alt="right arrow"
                                         className="mt-1"
                                     />
@@ -133,7 +139,7 @@ function Footer() {
                             <div className="container flex mt-3 justify-start">
                                 <div className="w-4">
                                     <img
-                                        src="/right_arrow.png"
+                                        src={arrow}
                                         alt="right arrow"
                                         className="mt-1"
                                     />
@@ -147,7 +153,7 @@ function Footer() {
                             <div className="container flex mt-3 justify-start">
                                 <div className="w-4">
                                     <img
-                                        src="/right_arrow.png"
+                                        src={arrow}
                                         alt="right arrow"
                                         className="mt-1"
                                     />
@@ -166,7 +172,7 @@ function Footer() {
                             <div className="container flex justify-start">
                                 <div className="w-4">
                                     <img
-                                        src="/right_arrow.png"
+                                        src={arrow}
                                         alt="right arrow"
                                         className="mt-1"
                                     />
@@ -180,7 +186,7 @@ function Footer() {
                             <div className="container flex mt-3 justify-start">
                                 <div className="w-4">
                                     <img
-                                        src="/right_arrow.png"
+                                        src={arrow}
                                         alt="right arrow"
                                         className="mt-1"
                                     />
@@ -194,7 +200,7 @@ function Footer() {
                             <div className="container flex mt-3 justify-start">
                                 <div className="w-4">
                                     <img
-                                        src="/right_arrow.png"
+                                        src={arrow}
                                         alt="right arrow"
                                         className="mt-1"
                                     />
@@ -208,7 +214,7 @@ function Footer() {
                             <div className="container flex mt-3 justify-start">
                                 <div className="w-4">
                                     <img
-                                        src="/right_arrow.png"
+                                        src={arrow}
                                         alt="right arrow"
                                         className="mt-1"
                                     />
@@ -222,7 +228,7 @@ function Footer() {
                             <div className="container flex mt-3 justify-start">
                                 <div className="w-4">
                                     <img
-                                        src="/right_arrow.png"
+                                        src={arrow}
                                         alt="right arrow"
                                         className="mt-1"
                                     />
@@ -258,7 +264,7 @@ function Footer() {
                                 </div>
                                 <div className=" container w-8 ml-3">
                                     <img
-                                        src="/address.png"
+                                        src={address}
                                         alt="address img"
                                         className="mt-3 ml-3"
                                     />
@@ -269,7 +275,7 @@ function Footer() {
                                 <div className="text-white ">sales@hssindia.in</div>
                                 <div className="container w-8">
                                     <img
-                                        src="/email.png"
+                                        src={email}
                                         alt="email img"
                                         className="ml-3 custom-css-email"
                                     />
@@ -280,7 +286,7 @@ function Footer() {
                                 <div className="text-white ">+91-9667 73 62 68</div>
                                 <div className="container w-5">
                                     <img
-                                        src="/phone.png"
+                                        src={phone}
                                         alt="phone img"
                                         className="ml-3 custom-css-phone"
                                     />
@@ -291,7 +297,7 @@ function Footer() {
                                 <div className="text-white ">+91-129-4057836</div>
                                 <div className="container w-5">
                                     <img
-                                        src="/phone.png"
+                                        src={phone}
                                         alt="phone img"
                                         className="ml-3 custom-css-phone"
                                     />
@@ -305,14 +311,14 @@ function Footer() {
             <div className="relative">
                 <div className="max-w-full">
                     <img
-                        src="/footer_img.png"
+                        src={footerImage}
                         alt="footer img"
                     />
                 </div>
                 <div className="container absolute top-9 left-1/3 flex justify-start max-w-sm m-auto pl-11">
                     <div className="container w-3 mt-2">
                         <img
-                            src="/copyright.svg"
+                            src={copyright}
                             alt="copyright svg"
                         />
                     </div>

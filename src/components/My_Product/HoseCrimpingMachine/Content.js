@@ -1,5 +1,9 @@
 import React from 'react'
 import ListCard from '../Accessories/ListCard'
+import hoseMachineOne from "../../../../static/hose_crimping_machine_one.jpg"
+import hoseMachineTwo from "../../../../static/hose_crimping_machine_two.jpg"
+import hoseMachineThree from "../../../../static/hose_crimping_machine_three.jpg"
+import hoseMachineFour from "../../../../static/hose_crimping_machine_four.jpg"
 
 function Content() {
   return (
@@ -16,25 +20,25 @@ function Content() {
             <div className='flex justify-evenly'>
               <div className='mr-2'>
                 <img
-                  src='/hose_crimping_machine_one.jpg'
+                  src={hoseMachineOne}
                   alt="box one"
                 />
               </div>
               <div className='mr-2 ml-2'>
                 <img
-                  src='/hose_crimping_machine_two.jpg'
+                  src={hoseMachineTwo}
                   alt="box one"
                 />
               </div>
               <div className='mr-2 ml-2'>
                 <img
-                  src='/hose_crimping_machine_three.jpg'
+                  src={hoseMachineThree}
                   alt="box one"
                 />
               </div>
               <div className='ml-2'>
                 <img
-                  src='/hose_crimping_machine_four.jpg'
+                  src={hoseMachineFour}
                   alt='adaptors five'
                 />
               </div>

@@ -1,4 +1,8 @@
 import React from 'react'
+import pexelsGustavo from "../../../../static/pexels_gustavo_fring.png"
+import hydraulicHose from "../../../../static/hydraulic_hose_fittings.webp"
+// import emobilityGetty from "../../../../static/emobility_getty.png"
+import commonPneumatic from "../../../../static/common_pneumatic_solution.png"
 
 function MyProduct() {
   return (
@@ -7,7 +11,7 @@ function MyProduct() {
         <div>
           <div className=' bg-white shadow-md border-l-8 border-b-8 border-orange-600 p-16 rounded'>
             <img
-              src='/pexels_gustavo_fring.png'
+              src={pexelsGustavo}
               alt='gas fuel'
               className='rounded'
             />
@@ -17,7 +21,7 @@ function MyProduct() {
         <div>
           <div className=' bg-white shadow-md border-l-8 border-b-8 border-orange-600 p-16 rounded'>
             <img
-              src='/hydraulic_hose_fittings.webp'
+              src={hydraulicHose}
               alt='hydraulic'
               className='rounded'
             />
@@ -27,7 +31,7 @@ function MyProduct() {
         {/* <div className='my-12'>
           <div className=' bg-white shadow-md border-l-8 border-b-8 border-orange-600 p-16 rounded'>
             <img
-              src='/emobility_getty.png'
+              src={emobilityGetty}
               alt='mobility'
               className='rounded mb-2'
             />
@@ -37,7 +41,7 @@ function MyProduct() {
         <div className='my-12'>
           <div className=' bg-white shadow-md border-l-8 border-b-8 border-orange-600 p-16 rounded'>
             <img
-              src='/common_pneumatic_solution.png'
+              src={commonPneumatic}
               alt='pneumatic'
               className='rounded'
             />

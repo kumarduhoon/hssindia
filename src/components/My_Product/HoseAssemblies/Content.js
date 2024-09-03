@@ -1,5 +1,7 @@
 import React from 'react'
 import ListCard from '../Accessories/ListCard'
+import hoseAssembliesOne from "../../../../static/hose_assemblies_one.png"
+import hoseAssembliesTwo from "../../../../static/hose_assemblies_two.jpg"
 
 function Content() {
   return (
@@ -22,13 +24,13 @@ function Content() {
             <div className='flex justify-evenly'>
               <div className='mr-2'>
                 <img
-                  src='/hose_assemblies_one.png'
+                  src={hoseAssembliesOne}
                   alt="box one"
                 />
               </div>
               <div className='ml-2'>
                 <img
-                  src='/hose_assemblies_two.jpg'
+                  src={hoseAssembliesTwo}
                   alt='adaptors five'
                 />
               </div>

@@ -1,6 +1,10 @@
 import React from 'react'
 import "./Content.scss"
 import ListCard from './ListCard'
+import accessoriesOne from "../../../../static/accessories_three.jpg"
+import accessoriesTwo from "../../../../static/accessories_one.jpg"
+import accessoriesThree from "../../../../static/accessories_two.jpg"
+
 
 function Content() {
   return (
@@ -24,19 +28,19 @@ function Content() {
             <div className='flex justify-evenly'>
               <div className='mr-2'>
                 <img
-                  src='/accessories_three.jpg'
+                  src={accessoriesOne}
                   alt="box one"
                 />
               </div>
               <div className='ml-2 mr-2'>
                 <img
-                  src='/accessories_one.jpg'
+                  src={accessoriesTwo}
                   alt='accessories one'
                 />
               </div>
               <div className='ml-2'>
                 <img
-                  src='/accessories_two.jpg'
+                  src={accessoriesThree}
                   alt='Accessories two'
                 />
               </div>

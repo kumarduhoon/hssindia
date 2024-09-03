@@ -1,5 +1,13 @@
 import React from 'react'
 import ListCard from '../Accessories/ListCard'
+import ballOne from "../../../../static/ball_valves_four.jpg"
+import ballTwo from "../../../../static/ball_valves_five.jpg"
+import ballThree from "../../../../static/ball_valves_six.png"
+import ballFour from "../../../../static/ball_valves_one.png"
+import ballFive from "../../../../static/ball_valves_two.jpg"
+import ballSix from "../../../../static/ball_valves_three.jpg"
+
+
 
 function Content() {
   return (
@@ -67,19 +75,19 @@ function Content() {
             <div className='flex justify-evenly'>
               <div className='mr-2'>
                 <img
-                  src='/ball_valves_one.png'
+                  src={ballFour}
                   alt="box one"
                 />
               </div>
               <div className='ml-2 mr-2'>
                 <img
-                  src='/ball_valves_two.jpg'
-                  alt='adaptors four'
+                  src={ballFive}
+                  alt='box four'
                 />
               </div>
               <div className='ml-2'>
                 <img
-                  src='/ball_valves_three.jpg'
+                  src={ballSix}
                   alt='adaptors five'
                 />
               </div>
@@ -192,19 +200,19 @@ function Content() {
             <div className='flex justify-evenly'>
               <div className='mr-2'>
                 <img
-                  src='/ball_valves_four.jpg'
+                  src={ballOne}
                   alt="box one"
                 />
               </div>
               <div className='ml-2 mr-2'>
                 <img
-                  src='/ball_valves_five.jpg'
+                  src={ballTwo}
                   alt='adaptors four'
                 />
               </div>
               <div className='ml-2'>
                 <img
-                  src='/ball_valves_six.png'
+                  src={ballThree}
                   alt='adaptors five'
                 />
               </div>

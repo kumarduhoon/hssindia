@@ -2,6 +2,7 @@ import React from "react";
 import "./Header.scss"
 import { Link } from "gatsby"
 import { useLocation } from "@reach/router"
+import logo from "../../../static/logo.png"
 
 
 function Header() {
@@ -26,7 +27,7 @@ function Header() {
                         <div className="logo-con">
                             <Link to="/">
                                 <img
-                                    src='/logo.png'
+                                    src={logo}
                                     alt="Logo"
                                     className="logo-class"
                                 />

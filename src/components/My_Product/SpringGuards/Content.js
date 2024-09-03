@@ -1,5 +1,8 @@
 import React from 'react'
 import ListCard from '../Accessories/ListCard'
+import springGuardOne from "../../../../static/spring_guard_one.jpg"
+import springGuardTwo from "../../../../static/spring_guard_two.jpg"
+import springGuardThree from "../../../../static/spring_guard_three.png"
 
 function Content() {
   return (
@@ -16,19 +19,19 @@ function Content() {
             <div className='flex justify-evenly'>
               <div className='mr-2'>
                 <img
-                  src='/spring_guard_one.jpg'
+                  src={springGuardOne}
                   alt="box one"
                 />
               </div>
               <div className='mr-2 ml-2'>
                 <img
-                  src='/spring_guard_two.jpg'
+                  src={springGuardTwo}
                   alt="box one"
                 />
               </div>
               <div className='ml-2'>
                 <img
-                  src='/spring_guard_three.png'
+                  src={springGuardThree}
                   alt='adaptors five'
                 />
               </div>

@@ -1,5 +1,8 @@
 import React from 'react'
 import ListCard from '../Accessories/ListCard'
+import clmapsOne from "../../../../static/clamps_one.png"
+import clmapsTwo from "../../../../static/clamps_two.png"
+import clmapsThree from "../../../../static/clamps_three.png"
 
 function Content() {
   return (
@@ -15,19 +18,19 @@ function Content() {
             <div className='flex justify-evenly'>
               <div className='mr-2'>
                 <img
-                  src='/clamps_one.png'
+                  src={clmapsOne}
                   alt="box one"
                 />
               </div>
               <div className='mr-2 ml-2'>
                 <img
-                  src='/clamps_two.png'
+                  src={clmapsTwo}
                   alt="box one"
                 />
               </div>
               <div className='ml-2'>
                 <img
-                  src='/clamps_three.png'
+                  src={clmapsThree}
                   alt='adaptors five'
                 />
               </div>

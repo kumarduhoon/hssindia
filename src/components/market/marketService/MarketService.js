@@ -1,4 +1,13 @@
 import React from 'react'
+import marketOne from "../../../../static/market_one.webp"
+import marketTwo from "../../../../static/market_two.webp"
+import marketThree from "../../../../static/market_three.webp"
+import marketFour from "../../../../static/market_four.webp"
+import marketFive from "../../../../static/market_five.webp"
+import marketSix from "../../../../static/market_six.webp"
+import marketSeven from "../../../../static/market_seven.webp"
+import marketEight from "../../../../static/market_eight.webp"
+import marketNine from "../../../../static/market_nine.webp"
 
 function MarketService() {
   return (
@@ -7,7 +16,7 @@ function MarketService() {
         <div className='container'>
           <div className='continer border-b-4 border-l-4 border-orange-500'>
             <img
-              src='/market_one.webp'
+              src={marketOne}
               className='w-full'
               alt=' market one'
             />
@@ -17,7 +26,7 @@ function MarketService() {
         <div className='container'>
           <div className='continer border-b-4 border-l-4 border-orange-500'>
             <img
-              src='/market_two.webp'
+              src={marketTwo}
               className='w-full'
               alt=' market one'
             />
@@ -27,7 +36,7 @@ function MarketService() {
         <div className='container'>
           <div className='continer border-b-4 border-l-4 border-orange-500'>
             <img
-              src='/market_three.webp'
+              src={marketThree}
               className='w-full'
               alt=' market one'
             />
@@ -39,7 +48,7 @@ function MarketService() {
         <div className='container'>
           <div className='continer border-b-4 border-l-4 border-orange-500'>
             <img
-              src='/market_four.webp'
+              src={marketFour}
               className='w-full'
               alt=' market one'
             />
@@ -49,7 +58,7 @@ function MarketService() {
         <div className='container'>
           <div className='continer border-b-4 border-l-4 border-orange-500'>
             <img
-              src='/market_five.webp'
+              src={marketFive}
               className='w-full'
               alt=' market one'
             />
@@ -59,7 +68,7 @@ function MarketService() {
         <div className='container'>
           <div className='continer border-b-4 border-l-4 border-orange-500'>
             <img
-              src='/market_six.webp'
+              src={marketSix}
               className='w-full'
               alt=' market one'
             />
@@ -71,7 +80,7 @@ function MarketService() {
         <div className='container'>
           <div className='continer border-b-4 border-l-4 border-orange-500'>
             <img
-              src='/market_seven.webp'
+              src={marketSeven}
               className='w-full'
               alt=' market one'
             />
@@ -81,7 +90,7 @@ function MarketService() {
         <div className='container'>
           <div className='continer border-b-4 border-l-4 border-orange-500'>
             <img
-              src='/market_eight.webp'
+              src={marketEight}
               className='w-full'
               alt=' market one'
             />
@@ -91,7 +100,7 @@ function MarketService() {
         <div className='container'>
           <div className='continer border-b-4 border-l-4 border-orange-500'>
             <img
-              src='/market_nine.webp'
+              src={marketNine}
               className='w-full'
               alt=' market one'
             />

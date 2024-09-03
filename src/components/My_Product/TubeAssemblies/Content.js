@@ -1,5 +1,6 @@
 import React from 'react'
 import ListCard from '../Accessories/ListCard'
+import tubeAssemblie from "../../../../static/tube_assemblies_one.jpg"
 
 function Content() {
   return (
@@ -22,7 +23,7 @@ function Content() {
             <div className='flex justify-start'>
               <div className='mr-2'>
                 <img
-                  src='/tube_assemblies_one.jpg'
+                  src={tubeAssemblie}
                   alt="box one"
                 />
               </div>

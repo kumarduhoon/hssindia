@@ -1,5 +1,10 @@
 import React from 'react'
 import ListCard from '../Accessories/ListCard'
+import hoseFittingOne from "../../../../static/hose_fitting_one.jpg"
+import hoseFittingTwo from "../../../../static/hose_fitting_two.jpg"
+import hoseFittingThree from "../../../../static/hose_fitting_three.jpg"
+import hoseFittingFour from "../../../../static/hose_fitting_four.jpg"
+import hoseFittingFive from "../../../../static/hose_fitting_five.jpg"
 
 function Content() {
   return (
@@ -28,13 +33,13 @@ function Content() {
             <div className='flex justify-evenly'>
               <div className='mr-2'>
                 <img
-                  src='/hose_fitting_one.jpg'
+                  src={hoseFittingOne}
                   alt="box one"
                 />
               </div>
               <div className='ml-2'>
                 <img
-                  src='/hose_fitting_two.jpg'
+                  src={hoseFittingTwo}
                   alt='adaptors five'
                 />
               </div>
@@ -57,19 +62,19 @@ function Content() {
             <div className='flex justify-evenly'>
               <div className='mr-2'>
                 <img
-                  src='/hose_fitting_three.jpg'
+                  src={hoseFittingThree}
                   alt="box one"
                 />
               </div>
               <div className='ml-2 mr-2'>
                 <img
-                  src='/hose_fitting_four.jpg'
+                  src={hoseFittingFour}
                   alt='adaptors four'
                 />
               </div>
               <div className='ml-2'>
                 <img
-                  src='/hose_fitting_five.jpg'
+                  src={hoseFittingFive}
                   alt='adaptors five'
                 />
               </div>

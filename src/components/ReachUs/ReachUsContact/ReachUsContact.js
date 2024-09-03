@@ -1,5 +1,14 @@
 import React from 'react'
 import "./ReachUsContact.scss"
+import reactUs from "../../../../static/reach_us_catch.png"
+import address from "../../../../static/address.png"
+import email from "../../../../static/email.png"
+import phone from "../../../../static/phone.png"
+import formName from "../../../../static/form_name.svg"
+import formEmail from "../../../../static/form_email.svg"
+import formPhone from "../../../../static/form_arrow.svg"
+import formWirte from "../../../../static/form_write.svg"
+import formLang from "../../../../static/form_down.svg"
 
 function ReachUsContact() {
   return (
@@ -7,7 +16,7 @@ function ReachUsContact() {
       <div className='container p-2'>
         <div className='container max-w-full'>
           <img
-            src='/reach_us_catch.png'
+            src={reactUs}
             alt='reach us contact'
             className='w-full'
           />
@@ -23,7 +32,7 @@ function ReachUsContact() {
               </div>
               <div >
                 <img
-                  src="/address.png"
+                  src={address}
                   alt="address img"
                   className=" mt-1 ml-3 w-7"
                 />
@@ -35,7 +44,7 @@ function ReachUsContact() {
               </div>
               <div >
                 <img
-                  src="/email.png"
+                  src={email}
                   alt="email img"
                   className="ml-3 w-8"
                 />
@@ -47,7 +56,7 @@ function ReachUsContact() {
               </div>
               <div >
                 <img
-                  src="/phone.png"
+                  src={phone}
                   alt="phone img"
                   className="ml-3 w-5"
                 />
@@ -59,7 +68,7 @@ function ReachUsContact() {
               </div>
               <div >
                 <img
-                  src="/phone.png"
+                  src={phone}
                   alt="phone img"
                   className="ml-3 w-5"
                 />
@@ -87,7 +96,7 @@ function ReachUsContact() {
                   placeholder='Full Name'
                 />
                 <img
-                  src='/form_name.svg'
+                  src={formName}
                   alt='name'
                   className=' absolute top-3 right-6'
                 />
@@ -98,8 +107,8 @@ function ReachUsContact() {
                   placeholder='Email Address'
                 />
                 <img
-                  src='/form_email.svg'
-                  alt='name'
+                  src={formEmail}
+                  alt='email'
                   className=' absolute top-3 right-6'
                 />
               </div>
@@ -111,8 +120,8 @@ function ReachUsContact() {
                   placeholder='Phone Number'
                 />
                 <img
-                  src='/form_arrow.svg'
-                  alt='name'
+                  src={formPhone}
+                  alt='phone'
                   className=' absolute top-3 right-6'
                 />
               </div>
@@ -122,8 +131,8 @@ function ReachUsContact() {
                   placeholder='Language'
                 />
                 <img
-                  src='/form_down.svg'
-                  alt='name'
+                  src={formLang}
+                  alt='lang'
                   className=' absolute top-4 right-3'
                 />
               </div>
@@ -136,8 +145,8 @@ function ReachUsContact() {
                 className='p-2'
               />
               <img
-                src='/form_write.svg'
-                alt='name'
+                src={formWirte}
+                alt='question'
                 className=' absolute top-2 right-4'
               />
             </div>
