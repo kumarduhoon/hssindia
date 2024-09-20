@@ -1,0 +1,16 @@
+.home-customer-head {
+  font-family: Crimson Text;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.home-customer-head-main {
+  margin-top: 40px;
+}
+
+@media (max-width: 425px) {
+  .main-con-gap {
+    gap: .5rem
+  }
+}

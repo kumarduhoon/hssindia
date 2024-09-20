@@ -1,26 +1,30 @@
 import React from 'react'
 import "./Home_hero.scss"
-import { StaticImage } from 'gatsby-plugin-image'
+import { navigate } from "gatsby"
+import ImageOne from "../../assests/images/homepage/heroImageOne.svg"
 
 function HomeHero() {
+  const handleClickService = () => {
+    navigate('/our-services'); // Navigate to About page
+  };
+  const handleClickQuote = () => {
+    navigate('/contact'); // Navigate to About page
+  };
   return (
-    <div className='relative'>
-      <div className='max-w-full'>
-        <StaticImage
-          src='../../../static/home_hero.png'
-          alt="Logo"
-          className="home-hero-class"
+    <section className="banner-section">
+      <div className="content-hide">
+        <h1>Transforming Ideas into Exceptional Digital Experiences</h1>
+        <p>Enabling to take flight through Precision Digital Engineering and end-to-end VC support.</p>
+        <button className="connect-button-btn1" onClick={handleClickService}>Our Services</button>
+        <button className="connect-button-btn2" onClick={handleClickQuote}>Get a Quote</button>
+      </div>
+      <div className="image-container">
+        <img
+          src={ImageOne}
+          alt="Team collaboration"
         />
       </div>
-      <div className='container max-w-80 m-auto absolute top-40 left-20 p-4'>
-        <h1 className='text-white text-2xl'>We Analysic Best</h1>
-        <p className='text-white text-lg mt-3'>HSS is leading manufacturers and trade for all Hydraulic hose Assemblies, Adaptors, Fillings and Accessories </p>
-        <div className='container flex justify-start mt-3'>
-          <button className='py-2 px-4 transform transition  duration-500  hover:scale-110 text-white btn-color-service text-2 rounded'>Our Services</button>
-          <button className='py-2 px-4 transform transition  duration-500  hover:scale-110 text-white text-2 btn-color-quote ml-8 rounded'>Get A Quote</button>
-        </div>
-      </div>
-    </div>
+    </section>
   )
 }
 

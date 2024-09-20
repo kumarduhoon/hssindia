@@ -1,0 +1,43 @@
+import React from 'react';
+import "./HomeAbout.scss"
+import { navigate } from "gatsby"
+import aboutImage from '../../../assests/images/homepage/homeAbout.svg';
+
+const HomeAbout = () => {
+  const handleClick = () => {
+    navigate('/about'); // Navigate to About page
+  };
+  return (
+    <div className="flex flex-col md:flex-row items-center justify-center py-16 px-4 bg-white">
+      <div className="md:w-1/2 flex justify-center">
+        <div className='img-width-con'>
+          <img
+            src={aboutImage}
+            alt="Hydraulic Fittings"
+            className="w-full h-auto object-cover rounded-md shadow-lg"
+          />
+        </div>
+      </div>
+      <div className="md:w-1/2 mt-8 md:mt-0 md:ml-8 text-center px-14 py-6 md:text-left my-div-heading">
+        <h2 className="text-2xl font-bold text-orange-600 mb-6 text-center home-about-us-head">About Us</h2>
+        <p className="text-gray-700 mb-6 text-center my-text-con">
+          At HSS, our mission is to enhance your competitiveness with industry-leading
+          motion and control solutions. We accomplish this by designing, building, and
+          delivering complete hydraulic and pneumatic systems with leading-edge technology
+          and design assistance. Backed by quality products, value pricing, and premier
+          service that will exceed your expectations.
+        </p>
+
+        <div className="flex justify-center">
+          <button className="bg-orange-500 text-white px-6 py-2 mt-4 rounded-md hover:bg-orange-600 transition duration-300 ease-in-out"
+            onClick={handleClick}
+          >
+            More Info &rarr;
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default HomeAbout;

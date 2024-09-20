@@ -1,0 +1,83 @@
+/* Styling for the products component */
+.products-container {
+  text-align: center;
+  padding: 40px;
+  background: #f7f7f7;
+  color: #fff;
+}
+
+.products-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: black;
+}
+
+.products-intro {
+  margin-bottom: 40px;
+  font-size: 1.2rem;
+  color: #aaa;
+}
+
+/* Grid for the products */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.product-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #333;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+}
+
+.product-icon {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #0e1d31;
+  /* Primary color for icon */
+}
+
+.product-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.product-card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-card {
+    padding: 15px;
+  }
+
+  .product-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .product-card p {
+    font-size: 0.9rem;
+  }
+}
