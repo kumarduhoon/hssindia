@@ -19,7 +19,7 @@ const HomeAbout = () => {
         </div>
       </div>
       <div className="md:w-1/2 mt-8 md:mt-0 md:ml-8 text-center px-14 py-6 md:text-left my-div-heading">
-        <h2 className="text-2xl font-bold text-orange-600 mb-6 text-center home-about-us-head">About Us</h2>
+        <h2 className="text-2xl font-bold text-color mb-6 text-center home-about-us-head">About Us</h2>
         <p className="text-gray-700 mb-6 text-center my-text-con">
           At HSS, our mission is to enhance your competitiveness with industry-leading
           motion and control solutions. We accomplish this by designing, building, and
@@ -29,7 +29,7 @@ const HomeAbout = () => {
         </p>
 
         <div className="flex justify-center">
-          <button className="bg-orange-500 text-white px-6 py-2 mt-4 rounded-md hover:bg-orange-600 transition duration-300 ease-in-out"
+          <button className="bg-btn-color text-white px-6 py-2 mt-4 rounded-md transition duration-300 ease-in-out"
             onClick={handleClick}
           >
             More Info &rarr;

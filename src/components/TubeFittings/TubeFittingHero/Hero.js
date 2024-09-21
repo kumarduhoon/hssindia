@@ -1,12 +1,14 @@
 import React from 'react'
-import { StaticImage } from 'gatsby-plugin-image'
+import "./Hero.scss"
+import tube_fittings_comparison_banner from "../../../assests/images/technical/tube_fittings_comparison.png"
 
 function Hero() {
   return (
-    <div className='w-full'>
-      <StaticImage
-        src='../../../../static/tube_fittings_comparison.png'
-        alt='hero'
+    <div className="tube-fittings-comparison-container">
+      <img
+        src={tube_fittings_comparison_banner}
+        alt='tube fittings comparison banner'
+        className='tube-fittings-comparison-image-banner'
       />
     </div>
   )

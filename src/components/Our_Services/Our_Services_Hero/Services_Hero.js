@@ -1,12 +1,15 @@
 import React from 'react'
-import { StaticImage } from "gatsby-plugin-image"
+import "./Services_Hero.scss"
+import services_banner from "../../../assests/images/servicePage/back_ground_service.svg"
+
 
 function ServicesHero() {
   return (
-    <div className='w-full'>
-      <StaticImage
-        src='../../../../static/our_services.webp'
-        alt='services hero'
+    <div className="service-container">
+      <img
+        src={services_banner}
+        alt='service banner'
+        className='service-image-banner'
       />
     </div>
   )

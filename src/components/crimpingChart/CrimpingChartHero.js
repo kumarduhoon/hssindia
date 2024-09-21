@@ -1,13 +1,17 @@
 import React from 'react'
-import { StaticImage } from 'gatsby-plugin-image'
+import "./CrimpingChartHero.scss"
+import crimping_chart_banner from "../../assests/images/technical/Crimping_Chart.webp"
 
 
 function CrimpingChartHero() {
   return (
-    <StaticImage
-      src="../../../static/Crimping_Chart.webp"
-      alt='Crimping Chart'
-    />
+    <div className="crimping-chart-hero-container">
+      <img
+        src={crimping_chart_banner}
+        alt='crimping chart hero'
+        className='crimping-chart-hero-image-banner'
+      />
+    </div>
   )
 }
 

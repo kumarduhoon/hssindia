@@ -1,13 +1,13 @@
 import React from 'react'
-import marketOne from "../../../../static/market_one.webp"
-import marketTwo from "../../../../static/market_two.webp"
-import marketThree from "../../../../static/market_three.webp"
-import marketFour from "../../../../static/market_four.webp"
-import marketFive from "../../../../static/market_five.webp"
-import marketSix from "../../../../static/market_six.webp"
-import marketSeven from "../../../../static/market_seven.webp"
-import marketEight from "../../../../static/market_eight.webp"
-import marketNine from "../../../../static/market_nine.webp"
+import marketOne from "../../../assests/images/market/market_one.webp"
+import marketTwo from "../../../assests/images/market/market_two.webp"
+import marketThree from "../../../assests/images/market/market_three.webp"
+import marketFour from "../../../assests/images/market/market_four.webp"
+import marketFive from "../../../assests/images/market/market_five.webp"
+import marketSix from "../../../assests/images/market/market_six.webp"
+import marketSeven from "../../../assests/images/market/market_seven.webp"
+import marketEight from "../../../assests/images/market/market_eight.webp"
+import marketNine from "../../../assests/images/market/market_nine.webp"
 
 function MarketService() {
   return (

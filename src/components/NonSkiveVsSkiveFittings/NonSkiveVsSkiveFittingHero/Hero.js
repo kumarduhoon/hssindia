@@ -1,14 +1,15 @@
 import React from 'react'
 import "./Hero.scss"
-import { StaticImage } from 'gatsby-plugin-image'
+import non_skive_vs_skive_fitting_banner from "../../../assests/images/technical/non_skive_vs_skive_fitting.png"
 
 
 function Hero() {
   return (
-    <div className='w-full'>
-      <StaticImage
-        src='../../../../static/non_skive_vs_skive_fitting.png'
-        alt='Non skive hero'
+    <div className="non-skive-vs-skive-container">
+      <img
+        src={non_skive_vs_skive_fitting_banner}
+        alt='non skive vs skive banner'
+        className='non-skive-vs-skive-image-banner'
       />
     </div>
   )

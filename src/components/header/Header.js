@@ -55,7 +55,7 @@ function Header() {
                 <li><Link activeClassName="active" to="/market">Market</Link></li>
                 <li><Link activeClassName="active" to="/our-services">Services</Link></li>
                 <li> <div className="group relative cursor-pointer">
-                    <div className={`flex items-center ${technicalActive ? 'active' : ''}`}>
+                    <div className={`flex items-center header-text-color ${technicalActive ? 'active' : ''}`}>
                         <b>
                             <span className=
                                 {`header-text-color text-xm font-bold cursor-pointer ${technicalActive ? 'active' : ''}`}>
@@ -75,22 +75,22 @@ function Header() {
                         </span>
                     </div>
                     <div
-                        className="absolute left-0 z-50 mt-2 flex flex-col bg-white py-1 px-4 text-gray-800 shadow-xl opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 w-64 origin-top invisible"
+                        className="absolute left-0 z-50 mt-2 flex flex-col bg-black py-1 px-4 text-white shadow-xl opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 w-64 origin-top invisible"
                     >
                         <Link
                             to="/crimping-chart"
                             activeClassName="active"
-                            className={`my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black`}
+                            className={`my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-white`}
                         >Crimping Chart</Link>
                         <Link
                             to="/non-skive-vs-skive-fittings"
                             activeClassName="active"
-                            className={`my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black`}
+                            className={`my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-text-white`}
                         >Non Skive vs Skive Fittings</Link>
                         <Link
                             to="/tube-fittings"
                             activeClassName="active"
-                            className={`my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black`}
+                            className={`my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-white`}
                         >Tube Fittings Comparison</Link>
                     </div>
                 </div></li>

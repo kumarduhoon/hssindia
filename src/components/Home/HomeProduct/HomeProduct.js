@@ -316,7 +316,7 @@ const HomeProduct = () => {
           </div>
         </section>
         <div className="text-center mt-6">
-          <button className="bg-orange-500 text-white py-2 px-6 rounded hover:bg-orange-600 transition duration-300" onClick={handleClick}>
+          <button className="bg-btn-color text-white py-2 px-6 rounded  transition duration-300" onClick={handleClick}>
             View All Products
           </button>
         </div>

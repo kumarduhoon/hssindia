@@ -1,14 +1,17 @@
 import React from 'react'
-import { StaticImage } from "gatsby-plugin-image"
+import "./about_us.scss"
+import About_us_banner from "../../assests/images/aboutpage/about-us_banner.svg"
 
 function AboutHero() {
   return (
-    <div className='w-full'>
-      <StaticImage
-        src='../../../static/about_us_imge.webp'
+    <div className="about-us-container">
+      <img
+        src={About_us_banner}
+        alt='about banner'
       />
     </div>
   )
-}
+};
+
 
 export default AboutHero
