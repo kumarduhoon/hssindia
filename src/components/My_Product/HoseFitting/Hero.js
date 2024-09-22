@@ -3,10 +3,13 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 function Hero() {
   return (
-    <div className='w-full'>
+    <div className="about-us-container">
       <StaticImage
         src='../../../../static/hose_fitting_hero.png'
-        alt='adaptor hero'
+        srcset="../../../../static/hose_fitting_hero.png"
+        alt="blurred"
+        aria-label="hose fittingd Cover"
+        className="about-us-img-hero"
       />
     </div>
   )

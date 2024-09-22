@@ -6,3 +6,9 @@ import './src/styles/global.css'
 export const wrapPageElement = ({ element, props }) => {
     return <Layout {...props}>{element}</Layout>;
 };
+
+// export const onRouteUpdate = ({ location }) => {
+//     if (location.action === 'PUSH') {
+//         window.scrollTo(0, 0);
+//     }
+// };

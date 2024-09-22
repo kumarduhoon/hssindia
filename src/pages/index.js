@@ -10,6 +10,7 @@ import HomeCustomer from "../components/Home/Customer/HomeCustomer"
 import HomeNew from "../components/Home/HomeNew/HomeNew"
 
 function Home() {
+
   return (
     <>
       <HomeHero />

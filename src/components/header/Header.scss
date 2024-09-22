@@ -107,10 +107,26 @@
   .navbar {
     padding: 10px 30px;
   }
+
+  .navbar-links {
+    top: 50px
+  }
 }
 
 @media (max-width: 425px) {
   .navbar-logo img {
     height: 30px;
   }
+}
+
+@media (max-width: 768px) {
+  .navbar-links {
+    gap: 15px;
+    padding: 30px;
+  }
+}
+
+.toggle-bar-cross-btn {
+  color: white;
+  font-size: 20px;
 }

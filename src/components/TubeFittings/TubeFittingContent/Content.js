@@ -4,7 +4,7 @@ import "./Content.scss"
 function Content() {
   return (
     <div className='w-full'>
-      <div className='m-16'>
+      <div className='m-16 margin-content-con'>
         <div className=' p-3'>
           <p className='mb-2'><b>Nominal Pressure (PN)</b></p>
           The Pressures specified are in accordance to DIN 2401 part 1 draft. The pressure has a safety factor of 4 times according to DIN 3859 standards.

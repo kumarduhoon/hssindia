@@ -13,7 +13,6 @@ function Header() {
         return paths.some(path => pathname.includes(path));
     };
 
-
     const technicalPaths = [
         '/crimping-chart',
         '/non-skive-vs-skive-fittings',
@@ -42,6 +41,9 @@ function Header() {
         };
     }, []);
 
+    useEffect(() => {
+        setIsOpen(() => (false))
+    }, [location.pathname])
     return (
         <nav className={`navbar ${scroll ? 'navbar-scrolled' : ''}`}>
             <div className="navbar-logo">
@@ -55,7 +57,7 @@ function Header() {
                 <li><Link activeClassName="active" to="/market">Market</Link></li>
                 <li><Link activeClassName="active" to="/our-services">Services</Link></li>
                 <li> <div className="group relative cursor-pointer">
-                    <div className={`flex items-center header-text-color ${technicalActive ? 'active' : ''}`}>
+                    <div className={`flex items-center justify-center header-text-color ${technicalActive ? 'active' : ''}`}>
                         <b>
                             <span className=
                                 {`header-text-color text-xm font-bold cursor-pointer ${technicalActive ? 'active' : ''}`}>
@@ -97,11 +99,15 @@ function Header() {
                 <li><Link activeClassName="active" to="/why-hss">Why HSS</Link></li>
                 <li><Link activeClassName="active" to="/contact">Reach Us</Link></li>
             </ul>
-            <div className="navbar-toggle" onClick={toggleMenu}>
-                <span className="toggle-bar"></span>
-                <span className="toggle-bar"></span>
-                <span className="toggle-bar"></span>
-            </div>
+            {
+                isOpen ? <div className="navbar-toggle" onClick={toggleMenu}>
+                    <span className="toggle-bar-cross-btn"><b>X</b></span>
+                </div> : <div className="navbar-toggle" onClick={toggleMenu}>
+                    <span className="toggle-bar"></span>
+                    <span className="toggle-bar"></span>
+                    <span className="toggle-bar"></span>
+                </div>
+            }
         </nav>
     )
 }

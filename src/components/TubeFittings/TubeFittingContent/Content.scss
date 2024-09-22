@@ -16,3 +16,9 @@
   background-color: #ff7300;
   color: white;
 }
+
+@media (max-width :425px) {
+  .margin-content-con {
+    margin: 1rem;
+  }
+}

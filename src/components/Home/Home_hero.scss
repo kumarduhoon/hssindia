@@ -5,9 +5,8 @@
   align-items: center;
   padding: 20px;
   background-color: #1a2a3a;
-  /* Dark blue background */
   color: white;
-  margin-top: 50px;
+  padding-top: 100px;
 }
 
 .content-hide {
@@ -113,5 +112,11 @@ p {
   .connect-button-btn1 {
     font-size: 12px;
     padding: 6px 14px;
+  }
+}
+
+@media (max-width: 425px) {
+  .banner-section {
+    padding-top: 50px;
   }
 }

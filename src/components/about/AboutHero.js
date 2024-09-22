@@ -1,13 +1,16 @@
 import React from 'react'
 import "./about_us.scss"
-import About_us_banner from "../../assests/images/aboutpage/about-us_banner.svg"
+import { StaticImage } from "gatsby-plugin-image";
 
 function AboutHero() {
   return (
     <div className="about-us-container">
-      <img
-        src={About_us_banner}
-        alt='about banner'
+      <StaticImage
+        src='../../assests/images/aboutpage/about-us_banner.svg'
+        srcset="../../assests/images/aboutpage/about-us_banner.svg"
+        alt="blurred"
+        aria-label="About Cover"
+        className="about-us-img-hero"
       />
     </div>
   )
