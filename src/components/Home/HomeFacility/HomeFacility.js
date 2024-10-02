@@ -3,7 +3,11 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./HomeFacility.scss"
-import ProductOne from "../../../assests/images/homepage/productOne.svg";
+import FacilityOne from "../../../assests/images/homepage/one_facility.png"
+import FacilityTwo from "../../../assests/images/homepage/two_facility.png"
+import FacilityThree from "../../../assests/images/homepage/three_facility.png"
+import FacilityFour from "../../../assests/images/homepage/four_facility.png"
+
 
 const HomeFacility = () => {
   const settings = {
@@ -11,9 +15,7 @@ const HomeFacility = () => {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 2000,
+    arrows: true,
     cssEase: "ease-in-out",
     adaptiveHeight: true,
     responsive: [
@@ -58,15 +60,16 @@ const FlipCard = ({ item }) => {
   return (
     <div >
       <img src={item.image} alt={item.title} className="card-img-card" />
+      <div className="facility-card-head">{item.title}</div>
     </div>
   );
 };
 
 const marketItems = [
-  { title: "Automotive", image: ProductOne },
-  { title: "Mobile Equipments", image: ProductOne },
-  { title: "Oil & Gas", image: ProductOne },
-  { title: "Agriculture", image: ProductOne },
+  { title: "CNC PIPE BANDING M/C", image: FacilityOne },
+  { title: "CRIMPING M/C", image: FacilityTwo },
+  { title: "HOSE BANDING M/C", image: FacilityThree },
+  { title: "HOSE CUTTING M/C", image: FacilityFour },
 ];
 
 export default HomeFacility;

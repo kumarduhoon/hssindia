@@ -1,122 +1,178 @@
-.banner-section {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: #1a2a3a;
-  color: white;
-  padding-top: 100px;
-}
-
-.content-hide {
-  max-width: 50%;
-}
-
-.content-hide h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-
-p {
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
-}
-
-.connect-button-btn1 {
-  padding: 10px 20px;
-  border: 2px solid white;
-  background: none;
-  color: white;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s ease;
-  margin-right: 5px;
-}
-
-
-.connect-button-btn2 {
-  padding: 10px 20px;
-  border: 2px solid white;
-  background: none;
-  color: white;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s ease;
-  margin-left: 5px;
-}
-
-
-.connect-button-btn1:hover {
-  background: orangered;
-  border: 2px solid orangered;
-}
-
-.connect-button-btn2:hover {
-  background: orangered;
-  border: 2px solid orangered;
-}
-
-
-
-
-.image-container {
-  max-width: 40%;
-}
-
-.image-container img {
+.banner-container {
   width: 100%;
-  height: auto;
-  border-radius: 8px;
+  overflow: hidden;
+  padding-top: 60px;
 }
 
-/* Responsive Design */
+.carousel-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.container-with-img {
+  position: relative;
+}
+
+.content-banner {
+  position: absolute;
+  left: 10%;
+  top: 45%;
+  transform: translateY(-50%);
+  color: white;
+  text-align: left;
+  max-width: 35%;
+}
+
+
+.content-banner-head {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.content-banner-para {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.content-banner-btn {
+  background-color: orangered;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+  text-decoration: "none";
+  margin-top: 20px;
+}
+
+.content-banner-btn-group {
+  display: flex;
+  gap: 10px;
+}
+
+.content-banner-btn:hover {
+  background-color: white;
+  color: #ff7f0e;
+}
+
+/* Make it responsive */
 @media (max-width: 768px) {
-  .banner-section {
-    flex-direction: column;
-    text-align: center;
+
+  .content-banner {
+    left: 5%;
+    top: 50%;
+    max-width: 45%;
   }
 
-  .content-hide {
-    max-width: 100%;
-  }
-
-  .image-container {
-    max-width: 100%;
-    margin-top: 20px;
-  }
-
-  .content-hide h1 {
+  .content-banner-head {
     font-size: 1.5rem;
-    margin-top: 10px;
   }
 
-  .connect-button-btn2 {
-    font-size: 14px;
+
+  .content-banner-btn {
+    font-size: 0.9rem;
     padding: 8px 16px;
   }
 
-  .connect-button-btn1 {
-    font-size: 14px;
-    padding: 8px 16px;
+  .content-banner-para {
+    font-size: 0.9rem;
+  }
+
+  .content-banner {
+    left: 5%;
+    top: 40%;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .content-banner-head {
+    font-size: 1rem;
+    margin-bottom: 4px;
+  }
+
+  .content-banner {
+    left: 10%;
+    top: 55%;
+    transform: translateY(-30%);
+    max-width: 90%;
+  }
+
+  .content-banner-para {
+    font-size: 0.8rem;
+    margin-bottom: 4px;
+    line-height: 1.4;
+  }
+
+  .content-banner-btn-group {
+    gap: 6px;
+  }
+
+  .content-banner-btn {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    margin-top: 0px;
+  }
+
+  .content-banner {
+    left: 5%;
+    top: 30%;
   }
 }
 
-@media (max-width: 375px) {
-  .connect-button-btn2 {
-    font-size: 12px;
-    padding: 6px 14px;
+@media (max-width: 320px) {
+  .content-banner-head {
+    margin-bottom: 4px;
   }
 
-  .connect-button-btn1 {
-    font-size: 12px;
-    padding: 6px 14px;
+  .content-banner-para {
+    margin-bottom: 4px;
+    line-height: 1.2;
+    font-size: 0.7rem;
+  }
+
+  .content-banner-btn {
+    font-size: 0.6rem;
+    padding: 4px 8px;
+    margin-top: 0px;
   }
 }
 
-@media (max-width: 425px) {
-  .banner-section {
+
+/* Custom dot styling */
+.slick-dots li {
+  margin: 0 5px;
+}
+
+.custom-dot span {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.slick-dots {
+  bottom: 0px;
+}
+
+.slick-dots li.slick-active span {
+  background-color: #ff7f0e;
+}
+
+@media screen and (max-width: 425px) {
+  .banner-container {
     padding-top: 50px;
+  }
+
+  .custom-dot span {
+    width: 6px;
+    height: 6px;
+  }
+
+  .slick-dots {
+    bottom: -8px;
   }
 }

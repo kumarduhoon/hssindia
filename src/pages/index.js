@@ -8,6 +8,7 @@ import HomeAchievement from "../components/Home/HomeAchievement/HomeAchievement"
 import HomeService from "../components/Home/HomeService/HomeService"
 import HomeCustomer from "../components/Home/Customer/HomeCustomer"
 import HomeNew from "../components/Home/HomeNew/HomeNew"
+import ProductSlider from "../components/Home/ProductSlider/ProductSlider"
 
 function Home() {
 
@@ -15,7 +16,7 @@ function Home() {
     <>
       <HomeHero />
       <HomeAbout />
-      <HomeProduct />
+      <ProductSlider />
       <HomeMarket />
       <HomeFacility />
       <HomeAchievement />

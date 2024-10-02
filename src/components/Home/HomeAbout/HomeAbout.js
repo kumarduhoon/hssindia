@@ -1,7 +1,7 @@
 import React from 'react';
 import "./HomeAbout.scss"
 import { navigate } from "gatsby"
-import aboutImage from '../../../assests/images/homepage/homeAbout.svg';
+import aboutImage from '../../../assests/images/homepage/homeAbout.png';
 
 const HomeAbout = () => {
   const handleClick = () => {
@@ -29,7 +29,7 @@ const HomeAbout = () => {
         </p>
 
         <div className="flex justify-center">
-          <button className="bg-btn-color text-white px-6 py-2 mt-4 rounded-md transition duration-300 ease-in-out"
+          <button className="bg-btn-color-about text-white px-6 py-2 mt-4 rounded-md transition duration-300 ease-in-out"
             onClick={handleClick}
           >
             More Info &rarr;

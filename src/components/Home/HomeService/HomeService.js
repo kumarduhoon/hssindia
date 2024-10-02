@@ -3,30 +3,60 @@ import "./HomeService.scss"
 
 const HomeService = () => {
   return (
-    <div className="tech-index-container">
-      <h1 className="tech-heading">
-        We Deliver Solutions with the Goal of Trusting Workshops
-      </h1>
-      <div className="services-grid">
-        {data.map((service, index) => (
-          <div className="service-cards" key={index}>
-            <div className="service-icon">{service.icon}</div>
-            <div className="service-name">{service.label}</div>
-          </div>
-        ))}
+    <div className="position-relative marquee-container d-none d-sm-block">
+      <div className="marquee d-flex justify-content-around">
+        <div className="market-card">
+          <img className="card-icon" alt="CNG" />
+          <h3 className="card-title">CNG</h3>
+        </div>
+        <div className="market-card">
+          <img className="card-icon" alt="HYDROGEN" />
+          <h3 className="card-title">HYDROGEN</h3>
+        </div>
+        <div className="market-card">
+          <img className="card-icon" alt="HYDRAULICS" />
+          <h3 className="card-title">HYDRAULICS</h3>
+        </div>
+        <div className="market-card">
+          <img className="card-icon" alt="LNG/PNG" />
+          <h3 className="card-title">LNG/PNG</h3>
+        </div>
+        <div className="market-card">
+          <img className="card-icon" alt="E-MOBILITY" />
+          <h3 className="card-title">E-MOBILITY</h3>
+        </div>
+        <div className="market-card">
+          <img className="card-icon" alt="PNEUMATICS" />
+          <h3 className="card-title">PNEUMATICS</h3>
+        </div>
+      </div>
+      <div className="marquee marquee2 d-flex justify-content-around">
+        <div className="market-card">
+          <img className="card-icon" alt="CNG" />
+          <h3 className="card-title">CNG</h3>
+        </div>
+        <div className="market-card">
+          <img className="card-icon" alt="HYDROGEN" />
+          <h3 className="card-title">HYDROGEN</h3>
+        </div>
+        <div className="market-card">
+          <img className="card-icon" alt="HYDRAULICS" />
+          <h3 className="card-title">HYDRAULICS</h3>
+        </div>
+        <div className="market-card">
+          <img className="card-icon" alt="LNG/PNG" />
+          <h3 className="card-title">LNG/PNG</h3>
+        </div>
+        <div className="market-card">
+          <img className="card-icon" alt="E-MOBILITY" />
+          <h3 className="card-title">E-MOBILITY</h3>
+        </div>
+        <div className="market-card">
+          <img className="card-icon" alt="PNEUMATICS" />
+          <h3 className="card-title">PNEUMATICS</h3>
+        </div>
       </div>
     </div>
   );
 };
-
-// Sample data for the slider
-const data = [
-  { id: 1, label: 'CNG', icon: '⛽️' },
-  { id: 2, label: 'HYDROGEN', icon: '💧' },
-  { id: 3, label: 'HYDRAULICS', icon: '⚙️' },
-  { id: 4, label: 'LNG/PNG', icon: '❄️' },
-  { id: 5, label: 'E-MOBILITY', icon: '🚗' },
-  { id: 6, label: 'PNEUMATICS', icon: '🔧' },
-];
-
 export default HomeService;

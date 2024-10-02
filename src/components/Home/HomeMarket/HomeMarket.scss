@@ -1,68 +1,223 @@
-.industry-sectors {
+.market-slider-container {
+  padding: 2rem;
   text-align: center;
-  padding: 50px 20px;
-  background-color: #f9f9f9;
+
+  .slider-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .view-all-button {
+    margin-top: 1.5rem;
+    background-color: orangered;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 2px solid orangered;
+  }
+
+  .view-all-button:hover {
+    background-color: white;
+    color: orangered;
+  }
 }
 
-.industry-sectors h2 {
-  font-size: 32px;
-  margin-bottom: 10px;
-  color: #333;
+.flip-card-container {
+  padding: 10px;
+  max-width: 215px;
+  height: 260px;
 }
 
-.industry-sectors p {
-  font-size: 18px;
-  color: #555;
-  margin-bottom: 30px;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  perspective: 1000px;
 }
 
-/* Grid for sector cards */
-.sector-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.sector-card {
+.flip-card-inner {
   position: relative;
-  background-color: #fff;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1.2s;
+  transform-style: preserve-3d;
 }
 
-.sector-card img {
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+
+.flip-card-front {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ddd;
+}
+
+.card-image {
   width: 100%;
   height: 200px;
   object-fit: cover;
 }
 
-.sector-card .sector-title {
+.card-title {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.flip-card-back {
+  background-color: #f1f1f1;
+  transform: rotateY(180deg);
+  padding: 20px 15px;
+  border: 1px solid #ddd;
+}
+
+.slick-prev,
+.slick-next {
   position: absolute;
-  bottom: 10px;
-  left: 20px;
-  color: white;
+  width: 40px;
+  height: 40px;
+  background-color: orangered !important;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: orangered !important;
+}
+
+.slick-prev {
+  left: -10%;
+}
+
+.slick-next {
+  right: -10%;
+}
+
+.slick-prev:before,
+.slick-next:before {
   font-size: 20px;
-  font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: white;
 }
 
-.sector-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
+/* Responsive adjustments */
+@media (max-width: 1024px) {
 
-/* Responsive styles */
-@media (max-width: 768px) {
-  .industry-sectors h2 {
-    font-size: 24px;
+  .slick-prev,
+  .slick-next {
+    width: 35px;
+    height: 35px;
   }
 
-  .industry-sectors p {
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 18px;
+  }
+
+  .slick-prev {
+    left: -3%;
+  }
+
+  .slick-next {
+    right: -4%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .slick-prev,
+  .slick-next {
+    width: 30px;
+    height: 30px;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
     font-size: 16px;
   }
+
+  .slick-next {
+    right: -3%;
+  }
+}
+
+@media (max-width: 640px) {
+
+  .slick-prev,
+  .slick-next {
+    width: 25px;
+    height: 25px;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 14px;
+  }
+}
+
+.heading-bg-image-homemarket {
+  background-image: url('../../../assests/images/homepage/head_backgound.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 60px;
+}
+
+.flip-card-back {
+  background-image: url('../../../assests/images/homepage/back_background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.span-heading-market {
+  display: inline-block;
+  margin-top: 15px;
+  border-bottom: 1px solid orangered;
+  padding-bottom: 2px;
+}
+
+.span-heading-market-back-side {
+  display: inline-block;
+  border-bottom: 1px solid orangered;
+  padding-bottom: 2px;
+}
+
+.span-padding-market-back-side {
+  font-size: 0.8rem;
+  margin-top: 10px;
+}
+
+.span-btn-market-back-side {
+  background-color: #2C2C2C;
+  color: wheat;
+  border: 2px solid #2C2C2C;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 20px;
+  display: inline-block;
 }

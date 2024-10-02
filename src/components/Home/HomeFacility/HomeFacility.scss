@@ -1,19 +1,3 @@
-.custom-arrow-class-right-market {
-  right: 45%;
-  cursor: pointer;
-  bottom: -20%
-}
-
-.custom-arrow-class-imgae {
-  width: 50px;
-}
-
-.custom-arrow-class-left-market {
-  left: 45%;
-  cursor: pointer;
-  bottom: -20%
-}
-
 .our-facilities-main-con {
   background-image: url('../../../assests/images/homepage/facility_background.svg');
   background-position: center;
@@ -32,6 +16,10 @@
   line-height: 36px;
 }
 
+.card-img-card {
+  width: 100%;
+}
+
 @media (min-width: 375px) and (max-width: 425px) {
   .p-4 {
     width: 100%;
@@ -40,4 +28,120 @@
   .card-img-card {
     width: 100%;
   }
+}
+
+.our-facilities-main-con-outer {
+  position: relative;
+
+  .slick-slider {
+    position: relative;
+    padding-bottom: 20px;
+    /* Create space for arrows at the bottom */
+  }
+
+  .slick-prev,
+  .slick-next {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: orangered !important;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+
+  .slick-prev:hover,
+  .slick-next:hover {
+    background-color: orangered;
+  }
+
+  .slick-prev {
+    left: 48%;
+  }
+
+  .slick-next {
+    left: 52%;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 20px;
+    color: white;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 1024px) {
+
+    .slick-prev,
+    .slick-next {
+      width: 35px;
+      height: 35px;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      font-size: 18px;
+    }
+  }
+
+  @media (max-width: 768px) {
+
+    .slick-prev,
+    .slick-next {
+      width: 30px;
+      height: 30px;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      font-size: 16px;
+    }
+
+    .slick-prev {
+      left: 47%;
+    }
+
+    .slick-next {
+      left: 53%;
+    }
+
+  }
+
+  @media (max-width: 640px) {
+
+    .slick-prev,
+    .slick-next {
+      width: 25px;
+      height: 25px;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      font-size: 14px;
+    }
+
+    .slick-prev {
+      left: 45%;
+    }
+
+    .slick-next {
+      left: 55%;
+    }
+  }
+}
+
+.facility-card-head {
+  background-color: orangered;
+  font-family: Crimson Text;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+  color: white;
+  padding: 15px;
 }

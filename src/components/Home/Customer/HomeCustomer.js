@@ -34,7 +34,7 @@ const HomeCustomer = () => {
   return (
     <div className="flex flex-col items-center justify-center w-full py-4 home-customer-head-main">
       <h2 className="text-xl mb-6 text-center home-customer-head">Our Customers</h2>
-      <div className="main-con-gap grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full max-w-screen-lg">
+      <div className="main-con-gap grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-3 w-full lg:px-2 md:px-2">
         {logos.map((logo, index) => (
           <div key={index} className="flex justify-center">
             <img
