@@ -6,7 +6,7 @@
 }
 
 .our-facilities-main-con-outer {
-  margin-top: 40px;
+  margin: 100px auto;
 }
 
 .our-facilities-main-head {
@@ -36,104 +36,93 @@
   .slick-slider {
     position: relative;
     padding-bottom: 20px;
-    /* Create space for arrows at the bottom */
-  }
-
-  .slick-prev,
-  .slick-next {
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 40px;
-    height: 40px;
-    background-color: orangered !important;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-  }
-
-  .slick-prev:hover,
-  .slick-next:hover {
-    background-color: orangered;
-  }
-
-  .slick-prev {
-    left: 48%;
-  }
-
-  .slick-next {
-    left: 52%;
-  }
-
-  .slick-prev:before,
-  .slick-next:before {
-    font-size: 20px;
-    color: white;
-  }
-
-  /* Responsive adjustments */
-  @media (max-width: 1024px) {
-
-    .slick-prev,
-    .slick-next {
-      width: 35px;
-      height: 35px;
-    }
-
-    .slick-prev:before,
-    .slick-next:before {
-      font-size: 18px;
-    }
-  }
-
-  @media (max-width: 768px) {
-
-    .slick-prev,
-    .slick-next {
-      width: 30px;
-      height: 30px;
-    }
-
-    .slick-prev:before,
-    .slick-next:before {
-      font-size: 16px;
-    }
-
-    .slick-prev {
-      left: 47%;
-    }
-
-    .slick-next {
-      left: 53%;
-    }
-
-  }
-
-  @media (max-width: 640px) {
-
-    .slick-prev,
-    .slick-next {
-      width: 25px;
-      height: 25px;
-    }
-
-    .slick-prev:before,
-    .slick-next:before {
-      font-size: 14px;
-    }
-
-    .slick-prev {
-      left: 45%;
-    }
-
-    .slick-next {
-      left: 55%;
-    }
   }
 }
+
+.custom-arrow-facility {
+  position: absolute;
+  z-index: 1;
+  font-size: 2rem;
+  background-color: orangered;
+  border: 2px solid orangered;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.next-arrow-facility {
+  left: 54%;
+}
+
+.prev-arrow-facility {
+  left: 46%;
+}
+
+
+
+//   /* Responsive adjustments */
+//   @media (max-width: 1024px) {
+
+//     .slick-prev,
+//     .slick-next {
+//       width: 35px;
+//       height: 35px;
+//     }
+
+//     .slick-prev:before,
+//     .slick-next:before {
+//       font-size: 18px;
+//     }
+//   }
+
+//   @media (max-width: 768px) {
+
+//     .slick-prev,
+//     .slick-next {
+//       width: 30px;
+//       height: 30px;
+//     }
+
+//     .slick-prev:before,
+//     .slick-next:before {
+//       font-size: 16px;
+//     }
+
+//     .slick-prev {
+//       left: 47%;
+//     }
+
+//     .slick-next {
+//       left: 53%;
+//     }
+
+//   }
+
+//   @media (max-width: 640px) {
+
+//     .slick-prev,
+//     .slick-next {
+//       width: 25px;
+//       height: 25px;
+//     }
+
+//     .slick-prev:before,
+//     .slick-next:before {
+//       font-size: 14px;
+//     }
+
+//     .slick-prev {
+//       left: 45%;
+//     }
+
+//     .slick-next {
+//       left: 55%;
+//     }
+//   }
+// }
 
 .facility-card-head {
   background-color: orangered;

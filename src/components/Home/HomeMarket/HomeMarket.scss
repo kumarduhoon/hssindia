@@ -1,223 +1,150 @@
-.market-slider-container {
-  padding: 2rem;
-  text-align: center;
-
-  .slider-title {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    position: relative;
-    z-index: 1;
-  }
-
-  .view-all-button {
-    margin-top: 1.5rem;
-    background-color: orangered;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    border: 2px solid orangered;
-  }
-
-  .view-all-button:hover {
-    background-color: white;
-    color: orangered;
-  }
-}
-
-.flip-card-container {
-  padding: 10px;
-  max-width: 215px;
-  height: 260px;
-}
-
-.flip-card {
-  background-color: transparent;
-  width: 100%;
-  height: 100%;
-  perspective: 1000px;
-}
-
-.flip-card-inner {
+.slider-container-market {
   position: relative;
-  width: 100%;
-  height: 100%;
+  max-width: 90%;
+  margin: 100px auto;
+}
+
+.slider-item-market {
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.card-content-market {
+  position: relative;
+  background-color: #fff;
   text-align: center;
-  transition: transform 1.2s;
-  transform-style: preserve-3d;
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front,
-.flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
 
-.flip-card-front {
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #ddd;
-}
-
-.card-image {
+.card-content-market-img {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
+  height: 250px;
+  transition: transform 0.3s ease;
 }
 
-.card-title {
-  font-size: 1.2rem;
-  margin-top: 10px;
+.card-content-market-img {
+  transform: scale(1.1);
 }
 
-.flip-card-back {
-  background-color: #f1f1f1;
-  transform: rotateY(180deg);
-  padding: 20px 15px;
-  border: 1px solid #ddd;
-}
-
-.slick-prev,
-.slick-next {
+/* Overlay specific to each card */
+.overlay-content-market {
   position: absolute;
-  width: 40px;
-  height: 40px;
-  background-color: orangered !important;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-}
-
-.slick-prev:hover,
-.slick-next:hover {
-  background-color: orangered !important;
-}
-
-.slick-prev {
-  left: -10%;
-}
-
-.slick-next {
-  right: -10%;
-}
-
-.slick-prev:before,
-.slick-next:before {
-  font-size: 20px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 25px;
+  background: rgba(255, 115, 72, 0.8);
   color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  opacity: 1;
 }
 
-/* Responsive adjustments */
+.overlay-content h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.overlay-content p {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Custom Arrow Styling */
+// .custom-arrow {
+//   position: absolute;
+//   top: 50%;
+//   transform: translateY(-50%);
+//   z-index: 1;
+//   font-size: 2rem;
+//   background-color: rgba(0, 0, 0, 0.5);
+//   color: white;
+//   padding: 10px;
+//   // border-radius: 50%;
+//   cursor: pointer;
+// }
+
+.next-arrow {
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
+.prev-arrow {
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.custom-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Responsive Arrow Size */
 @media (max-width: 1024px) {
-
-  .slick-prev,
-  .slick-next {
-    width: 35px;
-    height: 35px;
-  }
-
-  .slick-prev:before,
-  .slick-next:before {
-    font-size: 18px;
-  }
-
-  .slick-prev {
-    left: -3%;
-  }
-
-  .slick-next {
-    right: -4%;
+  .custom-arrow {
+    font-size: 1.8rem;
   }
 }
 
 @media (max-width: 768px) {
-
-  .slick-prev,
-  .slick-next {
-    width: 30px;
-    height: 30px;
+  .custom-arrow {
+    font-size: 1.5rem;
   }
 
-  .slick-prev:before,
-  .slick-next:before {
-    font-size: 16px;
+  .next-arrow {
+    right: -30px;
   }
 
-  .slick-next {
-    right: -3%;
+  .prev-arrow {
+    left: -30px;
   }
 }
 
-@media (max-width: 640px) {
-
-  .slick-prev,
-  .slick-next {
-    width: 25px;
-    height: 25px;
+@media (max-width: 480px) {
+  .custom-arrow {
+    font-size: 1.2rem;
+    padding: 5px;
   }
 
-  .slick-prev:before,
-  .slick-next:before {
-    font-size: 14px;
+  .next-arrow {
+    right: -20px;
+  }
+
+  .prev-arrow {
+    left: -20px;
   }
 }
 
-.heading-bg-image-homemarket {
-  background-image: url('../../../assests/images/homepage/head_backgound.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 60px;
+.our-market-title {
+  font-family: Crimson Text;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-.flip-card-back {
-  background-image: url('../../../assests/images/homepage/back_background.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.span-heading-market {
-  display: inline-block;
+.market-all-btn-div {
+  text-align: center;
   margin-top: 15px;
-  border-bottom: 1px solid orangered;
-  padding-bottom: 2px;
 }
 
-.span-heading-market-back-side {
-  display: inline-block;
-  border-bottom: 1px solid orangered;
-  padding-bottom: 2px;
-}
 
-.span-padding-market-back-side {
-  font-size: 0.8rem;
-  margin-top: 10px;
-}
 
-.span-btn-market-back-side {
-  background-color: #2C2C2C;
-  color: wheat;
-  border: 2px solid #2C2C2C;
-  padding: 10px 15px;
+.view-all-button {
+  margin-top: 1.5rem;
+  background-color: orangered;
+  color: white;
+  border: none;
+  padding: 10px 20px;
   border-radius: 5px;
-  text-decoration: none;
-  margin-top: 20px;
-  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: 2px solid orangered;
+}
+
+.view-all-button:hover {
+  background-color: white;
+  color: orangered;
 }

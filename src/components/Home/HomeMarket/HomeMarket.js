@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from "gatsby";
+import { navigate } from "gatsby"
 import OneMarket from "../../../assests/images/homepage/oneMarket.png"
 import TwoMarket from "../../../assests/images/homepage/TwoMarket.png"
 import ThreeMarket from "../../../assests/images/homepage/threeMarket.jpg"
@@ -12,73 +13,85 @@ import FiveMarket from "../../../assests/images/homepage/fiveMarket.png"
 import SixMarket from "../../../assests/images/homepage/sixMarket.png"
 import SevenMarket from "../../../assests/images/homepage/sevenMarket.png"
 import EightMarket from "../../../assests/images/homepage/eightMarket.png"
+import NineMarket from "../../../assests/images/homepage/marketNine.jpg"
+
+
+const NextArrow = ({ onClick }) => {
+  return (
+    <div className="arrow next-arrow" onClick={onClick}>
+      ➡
+    </div>
+  );
+};
+
+const PrevArrow = ({ onClick }) => {
+  return (
+    <div className="arrow prev-arrow" onClick={onClick}>
+      ⬅
+    </div>
+  );
+};
 
 const HomeMarket = () => {
 
+
+  const handleClick = () => {
+    navigate('/market');
+  };
+
   const settings = {
+    dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
-    arrows: true,
-    cssEase: 'ease-in-out',
+    centerMode: true,
+    centerPadding: '120px',
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
+          centerPadding: '100px',
         },
       },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 2,
+          centerPadding: '80px',
         },
       },
       {
-        breakpoint: 640,
+        breakpoint: 480,
         settings: {
           slidesToShow: 1,
+          centerPadding: '40px',
         },
       },
     ],
   };
 
   return (
-    <div className="max-w-6xl mx-auto p-4 md:px-2 market-slider-container">
-      <h2 className="slider-title">Our Market</h2>
+    <div className="slider-container-market">
+      <h2 className='our-market-title'>Our Market</h2>
       <Slider {...settings}>
-        {marketItems.map((item, index) => (
-          <div key={index} className="flip-card-container">
-            <div className="flip-card">
-              <div className="flip-card-inner">
-                {/* Front of the card (Image) */}
-                <div className="flip-card-front">
-                  <div className="heading-bg-image-homemarket">
-                    <div>
-                      <span className="span-heading-market">{item.title}</span>
-                    </div>
-                  </div>
-                  <img src={item.image} alt={item.title} className="card-image" />
-                </div>
-                {/* Back of the card (Content) */}
-                <div className="flip-card-back">
-                  <div>
-                    <span className="span-heading-market-back-side">{item.title}</span>
-                  </div>
-                  <p className="span-padding-market-back-side">{item.description}</p>
-                  <div>
-                    <Link to={item.src} className="span-btn-market-back-side">
-                      Learn More
-                    </Link>
-                  </div>
+        {marketItems.map((marketItem) => (
+          <Link to={marketItem.src}>
+            <div key={marketItem.id} className="slider-item-market">
+              <div className="card-content-market">
+                <img src={marketItem.image} alt={marketItem.title} className="card-content-market-img" />
+                <div className="overlay-content-market">
+                  <h3>{marketItem.title}</h3>
                 </div>
               </div>
             </div>
-          </div>
+          </Link>
         ))}
       </Slider>
-      <button className="view-all-button">View All Market</button>
+      <div className='market-all-btn-div'><button onClick={handleClick} className="view-all-button">View All Market</button></div>
     </div>
   )
 }
@@ -86,13 +99,14 @@ export default HomeMarket;
 
 
 const marketItems = [
-  { title: "Automotive", image: OneMarket, src: "/market", description: "HSS major strength is our ability to provide a complete hose and hydraulic system solution" },
-  { title: "Mobile Equipments", image: TwoMarket, src: "/market", description: "HSS major strength is our ability to provide a complete hose and hydraulic system solution" },
-  { title: "Oil & Gas", image: ThreeMarket, src: "/market", description: "HSS major strength is our ability to provide a complete hose and hydraulic system solution" },
-  { title: "Refinery & Petrochemic", image: FourMarket, src: "/market", description: "HSS major strength is our ability to provide a complete hose and hydraulic system solution" },
-  { title: "Food & Pharmaceuticals", image: FiveMarket, src: "/market", description: "HSS major strength is our ability to provide a complete hose and hydraulic system solution" },
-  { title: "Railways", image: SixMarket, src: "/market", description: "HSS major strength is our ability to provide a complete hose and hydraulic system solution" },
-  { title: "Agriculture", image: SevenMarket, src: "/market", description: "HSS major strength is our ability to provide a complete hose and hydraulic system solution" },
-  { title: "More", image: EightMarket, src: "/market", description: "HSS major strength is our ability to provide a complete hose and hydraulic system solution" },
+  { title: "Automotive", image: OneMarket, src: "/market", },
+  { title: "Mobile Equipments", image: TwoMarket, src: "/market", },
+  { title: "Oil & Gas", image: ThreeMarket, src: "/market", },
+  { title: "Refinery & Petrochemic", image: FourMarket, src: "/market", },
+  { title: "Food & Pharmaceuticals", image: FiveMarket, src: "/market", },
+  { title: "Railways", image: SixMarket, src: "/market", },
+  { title: "Agriculture", image: SevenMarket, src: "/market", },
+  { title: "Mini Equipments", image: EightMarket, src: "/market", },
+  { title: "General Industry", image: NineMarket, src: "/market", },
 ];
 

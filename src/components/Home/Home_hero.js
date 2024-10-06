@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './Home_hero.scss';
 import { Link } from "gatsby";
-// import slideOne from "../../assests/images/homepage/sider_one.png"
+import slideOne from "../../assests/images/homepage/sider_one.png"
 import sliderTwo from "../../assests/images/homepage/slider_two.png"
 import sliderThree from "../../assests/images/homepage/slider_three.png"
 
@@ -12,12 +12,13 @@ const Home_hero = ({ }) => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 2000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    // autoplay: true,
-    autoplaySpeed: 4000,
-    arrows: false, // Hide the arrows
+    fade: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    arrows: false,
 
     appendDots: dots => (
       <div>
@@ -26,7 +27,7 @@ const Home_hero = ({ }) => {
     ),
     customPaging: i => (
       <div className="custom-dot">
-        <span></span> {/* Custom dot as per your design */}
+        <span></span>
       </div>
     )
   };
@@ -61,7 +62,7 @@ export default Home_hero;
 const data = [
   {
     id: 1001,
-    src: sliderTwo,
+    src: slideOne,
     head: "We analyse best",
     para: "HSS is a leading manufacturer and trader for all Hydraulic hose assemblies, Adaptors, Fittings, and accessories.",
     btn_one: "/our-services",

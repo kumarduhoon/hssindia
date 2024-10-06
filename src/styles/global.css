@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  font-family: Avenirltstd-black, sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 .underline-animation {

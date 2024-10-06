@@ -1,76 +1,177 @@
-.product-slider-container {
+.slider-container {
+  max-width: 85%;
+  margin: 100px auto;
+}
+
+.our-product-title {
+  font-family: Crimson Text;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
   text-align: center;
-  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.product-bg-img-hss {
+  background-image: url(../../../assests/images/homepage/hss-bg.png);
+  background-size: cover;
+  background-position: center center;
+  padding: 20px 20px 10px 20px;
+}
+
+.product-bg-img-hss-triangle {
+  background-image: url(../../../assests/images/homepage/hss-bg-tri.png);
+  background-size: cover;
+  background-position: center center;
+  height: 100px;
   position: relative;
-  overflow: hidden;
 }
 
-.product-slider-container h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.slick-prev,
-.slick-next {
-  background-color: #ccc;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-}
-
-.slick-prev:hover,
-.slick-next:hover {
-  background-color: #888;
-}
-
-.product-card {
-  text-align: center;
-  padding: 10px;
-  transition: transform 0.3s ease;
-}
-
-.product-card img {
-  max-width: 100%;
-  height: auto;
-}
-
-.product-card h3 {
-  font-size: 18px;
-  margin: 10px 0;
-}
-
-.product-card p {
-  font-size: 14px;
-}
-
-.product-button {
-  font-size: 24px;
-  background-color: orange;
+.product-bg-img-hss-url-active {
+  position: absolute;
+  bottom: 15px;
+  right: 44%;
   color: white;
-  border: none;
-  padding: 5px 10px;
-  cursor: pointer;
-  margin-top: 10px;
-}
-
-.view-all-button {
-  margin-top: 20px;
-}
-
-.view-all-button button {
-  background-color: orange;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  font-size: 16px;
+  font-size: 20px;
+  background-color: orangered;
+  padding: 3px 10px;
+  border: 2px solid orangered;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-.view-all-button button:hover {
-  background-color: darkorange;
+.product-bg-img-hss-url-active:hover {
+  background-color: white;
+  color: orangered;
 }
 
-.swiper-wrapper {
-  transform: translate3d(0px, 0px, 0px) !important;
+.product-bg-img-hss-url-inactive {
+  color: black;
+  font-size: 20px;
+  background-color: white;
+  border: 2px solid white;
+  padding: 2px 11px;
+  cursor: pointer;
+  max-width: 50px;
+  margin: 10px auto;
+  transition: background-color 0.3s ease;
+}
+
+.product-bg-img-hss-url-inactive:hover {
+  background-color: black;
+  color: white;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 2px;
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+  transform: scale(0.8);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.product-description {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+  color: #777777;
+  font-family: "DM Sans", sans-serif;
+
+}
+
+.card.active {
+  transform: scale(1);
+  filter: none;
+}
+
+.card.inactive {
+  transform: scale(0.8);
+  filter: blur(1px);
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background-color: orangered;
+  color: white;
+  border: 2px solid orangered;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 5%;
+  transition: background-color 0.3s ease;
+}
+
+.next-arrow {
+  right: -40px;
+}
+
+.prev-arrow {
+  left: -40px;
+}
+
+.arrow:hover {
+  background-color: white;
+  color: orangered;
+}
+
+/* Responsive Arrow Styling */
+@media (max-width: 1024px) {
+  .arrow {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .arrow {
+    font-size: 1.5rem;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .arrow {
+    font-size: 1.2rem;
+    padding: 5px;
+  }
+
+  .next-arrow {
+    right: 5px;
+  }
+
+  .prev-arrow {
+    left: 5px;
+  }
+}
+
+.view-all-button {
+  margin-top: 1.5rem;
+  background-color: orangered;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: 2px solid orangered;
+}
+
+.view-all-button:hover {
+  background-color: white;
+  color: orangered;
+}
+
+.product-all-btn-div {
+  text-align: center;
+  margin-top: 15px;
 }

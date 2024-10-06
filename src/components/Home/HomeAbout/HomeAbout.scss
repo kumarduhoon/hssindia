@@ -1,5 +1,5 @@
 .my-text-con {
-  font-family: Crimson Text;
+  font-family: "DM Sans", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 35px;
@@ -7,7 +7,7 @@
 }
 
 .home-about-us-head {
-  font-family: Crimson Text;
+  font-family: "DM Sans", sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
@@ -17,19 +17,16 @@
 .home-about-us-head ::after {
   content: "";
   flex: 1;
-  border-bottom: 1px solid #FF6600;
-  /* Line color */
+  border-bottom: 1px solid orangered;
   margin: 0 15px;
 }
 
 .home-about-us-head ::before {
   margin-left: 0;
-  /* Optional: adjust left margin */
 }
 
 .home-about-us-head ::after {
   margin-right: 0;
-  /* Optional: adjust right margin */
 }
 
 @media (max-width: 425px) {

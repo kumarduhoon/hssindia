@@ -1,5 +1,6 @@
 import React from 'react'
 import "./HomeAchievement.scss"
+import Counter from './Counter';
 
 function HomeAchievement() {
   const stats = [
@@ -22,7 +23,9 @@ function HomeAchievement() {
       <div className="stats-grid">
         {stats.map((stat, index) => (
           <div className="stat-item" key={index}>
-            <h3 className="stat-number">{stat.number}</h3>
+            <h3 className="stat-number">
+              <Counter target={stat.number} /> +
+            </h3>
             <p className="stat-description">{stat.description}</p>
           </div>
         ))}

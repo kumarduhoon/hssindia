@@ -36,11 +36,11 @@ const HomeCustomer = () => {
       <h2 className="text-xl mb-6 text-center home-customer-head">Our Customers</h2>
       <div className="main-con-gap grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-3 w-full lg:px-2 md:px-2">
         {logos.map((logo, index) => (
-          <div key={index} className="flex justify-center">
+          <div key={index} className="flex justify-center img-customer-zoom">
             <img
               src={logo.src}
               alt={logo.alt}
-              className="h-20 w-36 object-contain" // You can adjust the height and width as needed
+              className="h-20 w-36 object-contain"
             />
           </div>
         ))}

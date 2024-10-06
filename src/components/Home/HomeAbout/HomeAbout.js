@@ -5,7 +5,7 @@ import aboutImage from '../../../assests/images/homepage/homeAbout.png';
 
 const HomeAbout = () => {
   const handleClick = () => {
-    navigate('/about'); // Navigate to About page
+    navigate('/about');
   };
   return (
     <div className="flex flex-col md:flex-row items-center justify-center py-16 px-4 bg-white">
@@ -14,7 +14,8 @@ const HomeAbout = () => {
           <img
             src={aboutImage}
             alt="Hydraulic Fittings"
-            className="w-full h-auto object-cover rounded-md shadow-lg"
+            className="w-full h-auto object-cover rounded-md shadow-lg object-top transition-transform duration-500 group-hover:scale-105"
+            loading="lazy"
           />
         </div>
       </div>
