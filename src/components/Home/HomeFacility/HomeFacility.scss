@@ -42,15 +42,18 @@
 .custom-arrow-facility {
   position: absolute;
   z-index: 1;
-  font-size: 2rem;
-  background-color: orangered;
-  border: 2px solid orangered;
+  background-color: #FF6600;
+  color: white;
+  border: 2px solid #FF6600;
   color: white;
   padding: 10px;
+  font-size: 2rem;
   cursor: pointer;
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
+  border-radius: 5%;
+  transition: background-color 0.3s ease;
 }
 
 .next-arrow-facility {
@@ -61,76 +64,48 @@
   left: 46%;
 }
 
+.custom-arrow-facility:hover {
+  background-color: white;
+  color: #FF6600;
+}
 
 
-//   /* Responsive adjustments */
-//   @media (max-width: 1024px) {
+@media (max-width: 768px) {
+  .custom-arrow-facility {
+    font-size: 1.5rem;
+  }
 
-//     .slick-prev,
-//     .slick-next {
-//       width: 35px;
-//       height: 35px;
-//     }
+  .next-arrow-facility {
+    left: 55%;
+  }
 
-//     .slick-prev:before,
-//     .slick-next:before {
-//       font-size: 18px;
-//     }
-//   }
+  .prev-arrow-facility {
+    left: 45%;
+  }
+}
 
-//   @media (max-width: 768px) {
+@media (max-width: 480px) {
+  .custom-arrow-facility {
+    font-size: 1.2rem;
+    padding: 5px;
+  }
 
-//     .slick-prev,
-//     .slick-next {
-//       width: 30px;
-//       height: 30px;
-//     }
+  .next-arrow-facility {
+    left: 68%;
+  }
 
-//     .slick-prev:before,
-//     .slick-next:before {
-//       font-size: 16px;
-//     }
-
-//     .slick-prev {
-//       left: 47%;
-//     }
-
-//     .slick-next {
-//       left: 53%;
-//     }
-
-//   }
-
-//   @media (max-width: 640px) {
-
-//     .slick-prev,
-//     .slick-next {
-//       width: 25px;
-//       height: 25px;
-//     }
-
-//     .slick-prev:before,
-//     .slick-next:before {
-//       font-size: 14px;
-//     }
-
-//     .slick-prev {
-//       left: 45%;
-//     }
-
-//     .slick-next {
-//       left: 55%;
-//     }
-//   }
-// }
+  .prev-arrow-facility {
+    left: 42%;
+  }
+}
 
 .facility-card-head {
-  background-color: orangered;
+  background-color: #FF6600;
   font-family: Crimson Text;
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
   text-align: center;
   color: white;
-  padding: 15px;
+  padding: 20px;
 }

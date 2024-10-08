@@ -176,7 +176,7 @@ const ProductSlider = () => {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 800,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
@@ -201,13 +201,19 @@ const ProductSlider = () => {
         {products.map((product, index) => (
           <div key={product.id} className={`card ${activeIndex === index ? 'active' : 'inactive'}`}>
             <img src={product.image} alt={product.title} />
-            <div className='product-bg-img-hss'>
-
-              <h2><b>{product.title}</b></h2>
-              <p className='product-description'>{product.description}</p>
-              {activeIndex === index ? null : <Link to={product.url}><div className='product-bg-img-hss-url-inactive'>+</div></Link>}
-            </div>
-            {activeIndex === index ? <Link to={product.url}><div className='product-bg-img-hss-triangle'><div className='product-bg-img-hss-url-active'>+</div></div></Link> : null}
+            {
+              activeIndex === index ? <div className='active-product-bg-img'>
+                <h2><b>{product.title}</b></h2>
+                <p className='product-description'>{product.description}</p>
+                {activeIndex === index ? <Link to={product.url}><div className='product-bg-img-hss-url-active'>+</div></Link> : null}
+              </div> :
+                <div className='product-bg-img-hss'>
+                  <h2><b>{product.title}</b></h2>
+                  <p className='product-description'>{product.description}</p>
+                  {activeIndex === index ? null : <Link to={product.url}><div className='product-bg-img-hss-url-inactive'>+</div></Link>}
+                </div>
+            }
+            {/* {activeIndex === index ?  */}
           </div>
         ))}
       </Slider>

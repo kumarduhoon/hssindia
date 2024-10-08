@@ -3,7 +3,7 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 35px;
-  text-align: center;
+  text-align: justify;
 }
 
 .home-about-us-head {
@@ -17,7 +17,7 @@
 .home-about-us-head ::after {
   content: "";
   flex: 1;
-  border-bottom: 1px solid orangered;
+  border-bottom: 1px solid #FF6600;
   margin: 0 15px;
 }
 
@@ -48,4 +48,49 @@
   background-color: white;
   color: #FF6600;
   border: 2px solid #FF6600;
+}
+
+@media(max-width: 1024px) {
+  .my-text-con {
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: justify;
+  }
+
+  my-div-heading {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media(max-width: 768px) {
+  .my-text-con {
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: justify;
+  }
+
+  .my-div-heading {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media(max-width: 768px) {
+  .my-text-con {
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: justify;
+  }
+
+  .my-div-heading {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }

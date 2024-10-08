@@ -7,6 +7,8 @@ import FacilityOne from "../../../assests/images/homepage/one_facility.png"
 import FacilityTwo from "../../../assests/images/homepage/two_facility.png"
 import FacilityThree from "../../../assests/images/homepage/three_facility.png"
 import FacilityFour from "../../../assests/images/homepage/four_facility.png"
+import FacilityFive from "../../../assests/images/homepage/five_facility.png"
+
 
 
 const NextArrow = ({ onClick }) => {
@@ -86,8 +88,9 @@ const FlipCard = ({ item }) => {
 const marketItems = [
   { title: "CNC PIPE BANDING M/C", image: FacilityOne },
   { title: "CRIMPING M/C", image: FacilityTwo },
-  { title: "HOSE BANDING M/C", image: FacilityThree },
+  { title: "HOSE TESTING M/C", image: FacilityThree },
   { title: "HOSE CUTTING M/C", image: FacilityFour },
+  { title: "HOSE TESTING M/C", image: FacilityFive },
 ];
 
 export default HomeFacility;

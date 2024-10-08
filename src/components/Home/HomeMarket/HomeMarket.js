@@ -18,7 +18,7 @@ import NineMarket from "../../../assests/images/homepage/marketNine.jpg"
 
 const NextArrow = ({ onClick }) => {
   return (
-    <div className="arrow next-arrow" onClick={onClick}>
+    <div className="arrow-market next-arrow-market" onClick={onClick}>
       ➡
     </div>
   );
@@ -26,7 +26,7 @@ const NextArrow = ({ onClick }) => {
 
 const PrevArrow = ({ onClick }) => {
   return (
-    <div className="arrow prev-arrow" onClick={onClick}>
+    <div className="arrow-market prev-arrow-market" onClick={onClick}>
       ⬅
     </div>
   );

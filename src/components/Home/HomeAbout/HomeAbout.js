@@ -19,7 +19,7 @@ const HomeAbout = () => {
           />
         </div>
       </div>
-      <div className="md:w-1/2 mt-8 md:mt-0 md:ml-8 text-center px-14 py-6 md:text-left my-div-heading">
+      <div className="md:w-1/2 mt-8 md:mt-0 md:ml-8  px-14 py-6 md:text-left my-div-heading md:px-8">
         <h2 className="text-2xl font-bold text-color mb-6 text-center home-about-us-head">About Us</h2>
         <p className="text-gray-700 mb-6 text-center my-text-con">
           At HSS, our mission is to enhance your competitiveness with industry-leading

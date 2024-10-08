@@ -32,18 +32,80 @@ const logos = [
 
 const HomeCustomer = () => {
   return (
-    <div className="flex flex-col items-center justify-center w-full py-4 home-customer-head-main">
-      <h2 className="text-xl mb-6 text-center home-customer-head">Our Customers</h2>
-      <div className="main-con-gap grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-3 w-full lg:px-2 md:px-2">
-        {logos.map((logo, index) => (
-          <div key={index} className="flex justify-center img-customer-zoom">
-            <img
-              src={logo.src}
-              alt={logo.alt}
-              className="h-20 w-36 object-contain"
-            />
-          </div>
-        ))}
+    <div className="home-customer-head-main">
+      <div className="flex flex-col items-center justify-centerpy-4 ">
+        <h2 className="text-xl mb-6 text-center home-customer-head">Our Customers</h2>
+      </div>
+      <div className="grid-container-customer-one">
+        <img
+          src={green}
+          alt="Greenfuel"
+          className="h-20 w-36 object-contain"
+        />
+        <img
+          src={hcc}
+          alt="hcc"
+          className="h-20 w-36 object-contain"
+        />
+        <img
+          src={logoMetso}
+          alt="logoMetso"
+          className="h-20 w-36 object-contain"
+        />
+        <img
+          src={polyhose}
+          alt="polyhose"
+          className="h-20 w-36 object-contain"
+        />
+        <img
+          src={afcons}
+          alt="afcons"
+          className="h-20 w-36 object-contain"
+        />
+      </div>
+      <div className="grid-container-customer-one">
+        <img
+          src={superHoze}
+          alt="superHoze"
+          className="h-20 w-36 object-contain"
+        />
+        <img
+          src={indianOil}
+          alt="indianOil"
+          className="h-20 w-36 object-contain"
+        />
+        <img
+          src={gates}
+          alt="gates"
+          className="h-20 w-36 object-contain"
+        />
+        <img
+          src={l_t}
+          alt="l_t"
+          className="h-20 w-36 object-contain"
+        />
+        <img
+          src={jbm}
+          alt="jbm"
+          className="h-20 w-36 object-contain"
+        />
+      </div>
+      <div className="grid-container-customer-one">
+        <img
+          src={jkFinner}
+          alt="jkFinner"
+          className="h-20 w-36 object-contain"
+        />
+        <img
+          src={plasserIndia}
+          alt="plasserIndia"
+          className="h-20 w-36 object-contain"
+        />
+        <img
+          src={robbinsLogo}
+          alt="robbinsLogo"
+          className="h-20 w-36 object-contain"
+        />
       </div>
     </div>
   );

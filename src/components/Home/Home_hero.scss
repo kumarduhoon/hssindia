@@ -38,7 +38,7 @@
 }
 
 .content-banner-btn {
-  background-color: orangered;
+  background-color: #FF6600;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -47,6 +47,7 @@
   border-radius: 5px;
   text-decoration: "none";
   margin-top: 20px;
+  transition: background-color 0.3s ease;
 }
 
 .content-banner-btn-group {
@@ -56,7 +57,7 @@
 
 .content-banner-btn:hover {
   background-color: white;
-  color: #ff7f0e;
+  color: #FF6600;
 }
 
 /* Make it responsive */

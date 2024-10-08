@@ -8,10 +8,18 @@
 .home-customer-head-main {
   margin: 100px auto;
   padding: 20px;
+  width: 80%;
 }
 
 @media (max-width: 425px) {
   .main-con-gap {
     gap: .5rem
   }
+}
+
+
+.grid-container-customer-one {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
 }

@@ -70,7 +70,7 @@ const data = [
   },
   {
     id: 1002,
-    src: sliderThree,
+    src: sliderTwo,
     head: "SINGLE PIECE NON-SKIVE FITTINGS",
     para: "We are the pioneers in introducing Single Piece Non-skive fittings to Indian market.",
     btn_one: "/our-services",

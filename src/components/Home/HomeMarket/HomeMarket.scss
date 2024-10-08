@@ -53,31 +53,34 @@
 }
 
 /* Custom Arrow Styling */
-// .custom-arrow {
-//   position: absolute;
-//   top: 50%;
-//   transform: translateY(-50%);
-//   z-index: 1;
-//   font-size: 2rem;
-//   background-color: rgba(0, 0, 0, 0.5);
-//   color: white;
-//   padding: 10px;
-//   // border-radius: 50%;
-//   cursor: pointer;
-// }
+.arrow-market {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background-color: #FF6600;
+  color: white;
+  border: 2px solid #FF6600;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 5%;
+  transition: background-color 0.3s ease;
+}
 
-.next-arrow {
+.next-arrow-market {
   right: 0;
   transform: translate(50%, -50%);
 }
 
-.prev-arrow {
+.prev-arrow-market {
   left: 0;
   transform: translate(-50%, -50%);
 }
 
-.custom-arrow:hover {
-  background-color: rgba(0, 0, 0, 0.7);
+.arrow-market:hover {
+  background-color: white;
+  color: #FF6600;
 }
 
 /* Responsive Arrow Size */
@@ -88,30 +91,30 @@
 }
 
 @media (max-width: 768px) {
-  .custom-arrow {
+  .arrow-market {
     font-size: 1.5rem;
   }
 
-  .next-arrow {
+  .next-arrow-market {
     right: -30px;
   }
 
-  .prev-arrow {
+  .prev-arrow-market {
     left: -30px;
   }
 }
 
 @media (max-width: 480px) {
-  .custom-arrow {
+  .arrow-market {
     font-size: 1.2rem;
     padding: 5px;
   }
 
-  .next-arrow {
+  .next-arrow-market {
     right: -20px;
   }
 
-  .prev-arrow {
+  .prev-arrow-market {
     left: -20px;
   }
 }
