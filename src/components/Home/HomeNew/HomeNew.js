@@ -1,6 +1,7 @@
 import React from 'react';
 import Slider from 'react-slick';
 import './HomeNew.scss';
+import MobileViewNews from "./MobileViewNews"
 import { Link } from 'gatsby';
 import { navigate } from "gatsby"
 import ProductOne from "../../../assests/images/homepage/productOne.png"
@@ -78,9 +79,6 @@ const HomeNew = () => {
     setActiveIndex(current);
   };
 
-  const handleClick = () => {
-    navigate('/products');
-  };
 
   const settings = {
     dots: false,
@@ -124,18 +122,23 @@ const HomeNew = () => {
   return (
     <div className="slider-container-new">
       <h2 className='our-new-title'>Our News</h2>
-      <Slider {...settings} afterChange={handleAfterChange}>
-        {products.map((product, index) => (
-          <div key={product.id} className={`card-new ${activeIndex === index ? 'active' : 'inactive'}`}>
-            <img src={product.image} alt={product.title} />
-            <div className='new-bg-img-hss'>
-              <h2><b>{product.title}</b></h2>
-              <p className='new-description'>{product.description}</p>
-              {activeIndex === index ? <div className='new-bg-img-hss-url-active'>+</div> : <Link to={product.url}><div className='new-bg-img-hss-url-inactive'>+</div></Link>}
+      <div className='desktop-view-news'>
+        <Slider {...settings} afterChange={handleAfterChange}>
+          {products.map((product, index) => (
+            <div key={product.id} className={`card-new ${activeIndex === index ? 'active' : 'inactive'}`}>
+              <img src={product.image} alt={product.title} />
+              <div className='new-bg-img-hss'>
+                <h2><b>{product.title}</b></h2>
+                <p className='new-description'>{product.description}</p>
+                {activeIndex === index ? <div className='new-bg-img-hss-url-active'>+</div> : <Link to={product.url}><div className='new-bg-img-hss-url-inactive'>+</div></Link>}
+              </div>
             </div>
-          </div>
-        ))}
-      </Slider>
+          ))}
+        </Slider>
+      </div>
+      <div className='mobile-view-news'>
+        <MobileViewNews />
+      </div>
     </div>
   );
 };

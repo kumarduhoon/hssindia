@@ -1,8 +1,14 @@
 .tube-fittings-comparison-container {
   width: 100%;
-  margin-top: 50px;
+  padding-top: 60px;
 }
 
 .tube-fittings-comparison-image-banner {
   width: 100%;
+}
+
+@media (max-width:425px) {
+  .tube-fittings-comparison-container {
+    padding-top: 50px;
+  }
 }

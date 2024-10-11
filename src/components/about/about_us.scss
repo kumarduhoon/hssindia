@@ -1,7 +1,15 @@
 .about-us-container {
   width: 100%;
+  padding-top: 60px;
+  overflow: hidden;
 }
 
 .about-us-img-hero {
   width: 100%;
+}
+
+@media (max-width: 425px) {
+  .about-us-container {
+    padding-top: 50px;
+  }
 }

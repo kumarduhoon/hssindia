@@ -6,7 +6,7 @@
 }
 
 .home-customer-head-main {
-  margin: 100px auto;
+  margin: 40px auto;
   padding: 20px;
   width: 80%;
 }
@@ -22,4 +22,10 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 10px;
+}
+
+@media (max-width: 320px) {
+  .home-customer-head {
+    font-size: 34px;
+  }
 }

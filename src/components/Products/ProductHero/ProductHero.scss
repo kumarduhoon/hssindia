@@ -1,7 +1,14 @@
-.about-us-container {
+.product-us-container {
+  width: 100%;
+  padding-top: 60px;
+}
+
+.product-us-img-hero {
   width: 100%;
 }
 
-.about-us-img-hero {
-  width: 100%;
+@media (max-width : 425px) {
+  .product-us-container {
+    padding-top: 50px;
+  }
 }

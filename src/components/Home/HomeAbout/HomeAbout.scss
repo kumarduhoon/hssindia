@@ -50,6 +50,14 @@
   border: 2px solid #FF6600;
 }
 
+.about-home-desktop {
+  display: block;
+}
+
+.about-home-mobile {
+  display: none;
+}
+
 @media(max-width: 1024px) {
   .my-text-con {
     font-family: "DM Sans", sans-serif;
@@ -92,5 +100,15 @@
   .my-div-heading {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+}
+
+@media(max-width: 480px) {
+  .about-home-desktop {
+    display: none;
+  }
+
+  .about-home-mobile {
+    display: block;
   }
 }

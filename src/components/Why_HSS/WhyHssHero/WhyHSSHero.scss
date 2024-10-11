@@ -1,0 +1,14 @@
+.why-hss-container {
+  width: 100%;
+  padding-top: 60px;
+}
+
+.why-hss-image-banner {
+  width: 100%;
+}
+
+@media (max-width:425px) {
+  .why-hss-container {
+    padding-top: 50px;
+  }
+}

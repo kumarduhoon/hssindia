@@ -1,7 +1,7 @@
 .slider-container-market {
   position: relative;
   max-width: 90%;
-  margin: 100px auto;
+  margin: 40px auto;
 }
 
 .slider-item-market {
@@ -96,11 +96,11 @@
   }
 
   .next-arrow-market {
-    right: -30px;
+    right: -1px;
   }
 
   .prev-arrow-market {
-    left: -30px;
+    left: -1px;
   }
 }
 
@@ -111,13 +111,31 @@
   }
 
   .next-arrow-market {
-    right: -20px;
+    right: -1px;
   }
 
   .prev-arrow-market {
-    left: -20px;
+    left: -1px;
   }
 }
+
+@media (max-width: 320px) {
+  .arrow-market {
+    font-size: 1.2rem;
+    padding: 5px;
+  }
+
+  .next-arrow-market {
+    right: 5px;
+  }
+
+  .prev-arrow-market {
+    left: 5px;
+  }
+}
+
+
+
 
 .our-market-title {
   font-family: Crimson Text;

@@ -1,8 +1,14 @@
 .non-skive-vs-skive-container {
   width: 100%;
-  margin-top: 50px;
+  padding-top: 60px;
 }
 
 .non-skive-vs-skive-image-banner {
   width: 100%;
+}
+
+@media (max-width:425px) {
+  .non-skive-vs-skive-container {
+    padding-top: 50px;
+  }
 }

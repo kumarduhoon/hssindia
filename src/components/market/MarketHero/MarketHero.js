@@ -5,13 +5,13 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 function MarketHero() {
   return (
-    <div className="about-us-container">
+    <div className="market-us-container">
       <StaticImage
-        src='../../../../static/market.webp'
-        srcset="../../../../static/market.webp"
+        src='../../../assests/images/market/marke_bannner.png'
+        srcset="../../../assests/images/market/marke_bannner.png"
         alt="blurred"
         aria-label="market Cover"
-        className="about-us-img-hero"
+        className="market-us-img-hero"
       />
     </div>
   )

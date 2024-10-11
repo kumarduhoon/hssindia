@@ -68,7 +68,8 @@ const HomeMarket = () => {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          centerPadding: '40px',
+          centerPadding: '0px',
+          centerMode: false
         },
       },
     ],

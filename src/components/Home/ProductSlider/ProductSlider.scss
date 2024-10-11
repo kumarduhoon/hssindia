@@ -1,6 +1,6 @@
 .slider-container {
   max-width: 85%;
-  margin: 100px auto;
+  margin: 40px auto;
 }
 
 .our-product-title {
@@ -187,4 +187,22 @@
 .product-all-btn-div {
   text-align: center;
   margin-top: 15px;
+}
+
+.desktop-product {
+  display: block;
+}
+
+.mobile-product {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .desktop-product {
+    display: none;
+  }
+
+  .mobile-product {
+    display: block;
+  }
 }

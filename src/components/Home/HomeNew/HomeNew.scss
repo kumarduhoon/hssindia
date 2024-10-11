@@ -1,6 +1,6 @@
 .slider-container-new {
   max-width: 85%;
-  margin: 100px auto;
+  margin: 40px auto;
 }
 
 .our-new-title {
@@ -114,10 +114,28 @@
   color: orangered;
 }
 
+.desktop-view-news {
+  display: block;
+}
+
+.mobile-view-news {
+  display: none;
+}
+
 /* Responsive Arrow Styling */
 @media (max-width: 1024px) {
   .arrow-new {
     font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .desktop-view-news {
+    display: none;
+  }
+
+  .mobile-view-news {
+    display: block;
   }
 }
 

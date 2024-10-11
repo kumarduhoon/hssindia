@@ -5,13 +5,13 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 function ServicesHero() {
   return (
-    <div className="about-us-container">
+    <div className="service-us-container">
       <StaticImage
         src='../../../assests/images/servicePage/back_ground_service.svg'
         srcset="../../../assests/images/servicePage/back_ground_service.svg"
         alt="blurred"
         aria-label="service Cover"
-        className="about-us-img-hero"
+        className="service-us-img-hero"
       />
     </div>
   )

@@ -8,8 +8,9 @@ const HomeAbout = () => {
     navigate('/about');
   };
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center py-16 px-4 bg-white">
-      <div className="md:w-1/2 flex justify-center">
+    <div className="flex flex-col md:flex-row items-center justify-center py-10 px-4 bg-white">
+      <h2 className="text-2xl font-bold text-color mb-6 text-center home-about-us-head about-home-mobile">About Us</h2>
+      <div className="md:w-1/2 flex justify-center ">
         <div className='img-width-con'>
           <img
             src={aboutImage}
@@ -20,7 +21,7 @@ const HomeAbout = () => {
         </div>
       </div>
       <div className="md:w-1/2 mt-8 md:mt-0 md:ml-8  px-14 py-6 md:text-left my-div-heading md:px-8">
-        <h2 className="text-2xl font-bold text-color mb-6 text-center home-about-us-head">About Us</h2>
+        <h2 className="text-2xl font-bold text-color mb-6 text-center home-about-us-head about-home-desktop">About Us</h2>
         <p className="text-gray-700 mb-6 text-center my-text-con">
           At HSS, our mission is to enhance your competitiveness with industry-leading
           motion and control solutions. We accomplish this by designing, building, and

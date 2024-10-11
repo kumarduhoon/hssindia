@@ -1,8 +1,14 @@
 .crimping-chart-hero-container {
   width: 100%;
-  margin-top: 50px;
+  padding-top: 60px;
 }
 
 .crimping-chart-hero-image-banner {
   width: 100%;
+}
+
+@media (max-width:425px) {
+  .crimping-chart-hero-container {
+    padding-top: 50px;
+  }
 }

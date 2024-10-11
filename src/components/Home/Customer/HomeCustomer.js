@@ -14,21 +14,6 @@ import jkFinner from "../../../assests/images/homepage/jk_finner.svg"
 import plasserIndia from "../../../assests/images/homepage/plasser_India.svg"
 import robbinsLogo from "../../../assests/images/homepage/robbins_logo.svg"
 
-const logos = [
-  { src: robbinsLogo, alt: "Robbins" },
-  { src: plasserIndia, alt: "Plasser India" },
-  { src: jkFinner, alt: "JK Fenner" },
-  { src: jbm, alt: "JBM" },
-  { src: l_t, alt: "L&T" },
-  { src: gates, alt: "Gates" },
-  { src: indianOil, alt: "Indian Oil" },
-  { src: superHoze, alt: "Super Hoze" },
-  { src: afcons, alt: "Afcons" },
-  { src: polyhose, alt: "Polyhose" },
-  { src: logoMetso, alt: "Metso" },
-  { src: hcc, alt: "HCC" },
-  { src: green, alt: "Greenfuel" }
-];
 
 const HomeCustomer = () => {
   return (
@@ -38,8 +23,8 @@ const HomeCustomer = () => {
       </div>
       <div className="grid-container-customer-one">
         <img
-          src={green}
-          alt="Greenfuel"
+          src={robbinsLogo}
+          alt="robbinsLogo"
           className="h-20 w-36 object-contain"
         />
         <img
@@ -102,8 +87,8 @@ const HomeCustomer = () => {
           className="h-20 w-36 object-contain"
         />
         <img
-          src={robbinsLogo}
-          alt="robbinsLogo"
+          src={green}
+          alt="Greenfuel"
           className="h-20 w-36 object-contain"
         />
       </div>

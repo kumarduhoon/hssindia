@@ -4,11 +4,12 @@
 }
 
 .home_service_main-inner-head {
-  font-size: 36px;
-  line-height: 48px;
+  font-size: 32px;
+  line-height: 40px;
   color: #343a40;
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
+  margin-bottom: 20px;
 }
 
 /* Flexbox row container */
@@ -22,8 +23,10 @@
 
 /* Card styling */
 .card-service {
-  flex: 1 1;
+  flex: 1 1 185px;
+  /* Adjusted for better scaling */
   max-width: 185px;
+  min-width: 160px;
   height: 185px;
   padding: 20px;
   transition: transform 0.3s ease;
@@ -31,10 +34,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 10px;
+  margin: 15px;
   cursor: pointer;
   background-color: #f8f8f8;
-  border-radius: 8px;
+  border-radius: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 4px 8px rgba(255, 102, 0, 0.8);
 }
@@ -55,22 +58,79 @@
   font-size: 1.2rem;
 }
 
-/* Responsive styling */
-@media (max-width: 768px) {
+/* Responsive styling for small devices */
+@media (max-width: 576px) {
+  .home_service_main-inner-head {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
   .card-row {
-    justify-content: flex-start;
+    justify-content: center;
   }
 
   .card-service {
-    flex: 1 1 auto;
-    height: auto;
-    max-width: 200px;
-    margin: 5px;
+    flex: 1 1 100%;
+    max-width: 280px;
+    margin: 10px 0;
+  }
+
+  .card-icon-service {
+    width: 40px;
+    height: 40px;
+  }
+
+  .card-icon-service-head {
+    font-size: 1rem;
   }
 }
 
+/* Responsive styling for medium devices */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .card-service {
+    flex: 1 1 250px;
+    max-width: 250px;
+  }
+
+  .card-icon-service {
+    width: 45px;
+    height: 45px;
+  }
+
+  .card-icon-service-head {
+    font-size: 1.1rem;
+  }
+
+  .card-service {
+    flex: 1 1 230px;
+    max-width: 230px;
+    margin: 15px;
+  }
+}
+
+/* Responsive styling for large devices */
 @media (min-width: 1200px) {
+  .home_service_main-inner-head {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
   .card-row {
     justify-content: space-between;
+  }
+
+  .card-service {
+    flex: 1 1 185px;
+    max-width: 185px;
+    margin: 15px;
+  }
+
+  .card-icon-service {
+    width: 60px;
+    height: 60px;
+  }
+
+  .card-icon-service-head {
+    font-size: 1.3rem;
   }
 }

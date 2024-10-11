@@ -1,6 +1,7 @@
 import React from 'react';
 import Slider from 'react-slick';
 import './ProductSlider.scss';
+import MobileViewProduct from "./MobileViewProduct"
 import { Link } from 'gatsby';
 import { navigate } from "gatsby"
 import ProductOne from "../../../assests/images/homepage/productOne.png"
@@ -197,26 +198,30 @@ const ProductSlider = () => {
   return (
     <div className="slider-container ">
       <h2 className='our-product-title'>Our Products</h2>
-      <Slider {...settings} afterChange={handleAfterChange}>
-        {products.map((product, index) => (
-          <div key={product.id} className={`card ${activeIndex === index ? 'active' : 'inactive'}`}>
-            <img src={product.image} alt={product.title} />
-            {
-              activeIndex === index ? <div className='active-product-bg-img'>
-                <h2><b>{product.title}</b></h2>
-                <p className='product-description'>{product.description}</p>
-                {activeIndex === index ? <Link to={product.url}><div className='product-bg-img-hss-url-active'>+</div></Link> : null}
-              </div> :
-                <div className='product-bg-img-hss'>
+      <div className='desktop-product'>
+        <Slider {...settings} afterChange={handleAfterChange}>
+          {products.map((product, index) => (
+            <div key={product.id} className={`card ${activeIndex === index ? 'active' : 'inactive'}`}>
+              <img src={product.image} alt={product.title} />
+              {
+                activeIndex === index ? <div className='active-product-bg-img'>
                   <h2><b>{product.title}</b></h2>
                   <p className='product-description'>{product.description}</p>
-                  {activeIndex === index ? null : <Link to={product.url}><div className='product-bg-img-hss-url-inactive'>+</div></Link>}
-                </div>
-            }
-            {/* {activeIndex === index ?  */}
-          </div>
-        ))}
-      </Slider>
+                  {activeIndex === index ? <Link to={product.url}><div className='product-bg-img-hss-url-active'>+</div></Link> : null}
+                </div> :
+                  <div className='product-bg-img-hss'>
+                    <h2><b>{product.title}</b></h2>
+                    <p className='product-description'>{product.description}</p>
+                    {activeIndex === index ? null : <Link to={product.url}><div className='product-bg-img-hss-url-inactive'>+</div></Link>}
+                  </div>
+              }
+            </div>
+          ))}
+        </Slider>
+      </div>
+      <div className='mobile-product'>
+        <MobileViewProduct />
+      </div>
       <div className='product-all-btn-div'><button onClick={handleClick} className="view-all-button">View All Products</button></div>
     </div>
   );

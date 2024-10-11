@@ -4,10 +4,13 @@ import { StaticImage } from "gatsby-plugin-image"
 
 function WhyHSSHeros() {
   return (
-    <div className='w-full'>
+    <div className="why-hss-container">
       <StaticImage
-        src='../../../../static/whyhss.png'
-        alt=' why hss'
+        src='../../../assests/images/whyhss/whyhss.png'
+        srcset="../../../assests/images/whyhss/whyhss.png"
+        alt="blurred"
+        aria-label="why-hss-image-banner"
+        className="why-hss-image-banner"
       />
     </div>
   )

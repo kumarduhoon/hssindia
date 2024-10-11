@@ -1,0 +1,113 @@
+.mobile-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background-color: #FF6600;
+  color: white;
+  border: 2px solid #FF6600;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 5%;
+  transition: background-color 0.3s ease;
+}
+
+.mobile-next-arrow {
+  right: -40px;
+}
+
+.mobile-prev-arrow {
+  left: -40px;
+}
+
+.mobile-arrow:hover {
+  background-color: white;
+  color: #FF6600;
+}
+
+.card-mobile {
+  background-color: #fff;
+  border-radius: 2px;
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.card-mobile img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-bg-img-hss-mobile {
+  background-image: url(../../../assests/images/homepage/hss-bg.png);
+  background-size: cover;
+  background-position: center center;
+  padding: 20px 20px 10px 20px;
+}
+
+.product-description-mobile {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+  color: #777777;
+  font-family: "DM Sans", sans-serif;
+}
+
+.product-bg-img-hss-url-mobile {
+  color: black;
+  font-size: 20px;
+  background-color: white;
+  border: 2px solid white;
+  padding: 2px 11px;
+  cursor: pointer;
+  max-width: 50px;
+  margin: 10px auto;
+  transition: background-color 0.3s ease;
+}
+
+.product-bg-img-hss-url-mobile:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Responsive Arrow Styling */
+@media (max-width: 1024px) {
+  .mobile-arrow {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .mobile-arrow {
+    font-size: 1.5rem;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mobile-arrow {
+    font-size: 1.2rem;
+    padding: 5px;
+  }
+
+  .mobile-next-arrow {
+    right: -20px;
+  }
+
+  .mobile-prev-arrow {
+    left: -20px;
+  }
+
+  .product-bg-img-hss-mobile {
+    padding: 20px 12px 10px 12px;
+  }
+}
+
+@media (max-width: 375px) {
+  .card-mobile {
+    padding: 1px;
+  }
+}

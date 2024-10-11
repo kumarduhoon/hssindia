@@ -6,42 +6,42 @@ function Content() {
     <div className='w-full'>
       <div className='m-16 margin-content-con'>
         <div className=' p-3'>
-          <p className='mb-2'><b>Nominal Pressure (PN)</b></p>
+          <p className='mb-2 class-text-tube'><b>Nominal Pressure (PN)</b></p>
           The Pressures specified are in accordance to DIN 2401 part 1 draft. The pressure has a safety factor of 4 times according to DIN 3859 standards.
         </div>
         <div className=' p-3'>
-          <p className='mb-2'><b>Pressure Range</b></p>
-          <ul className='ml-4'>
+          <p className='mb-2 class-text-tube'><b>Pressure Range</b></p>
+          <ul className='ml-4 class-text-tube'>
             <li>LL Series: Up to 100 Bar</li>
             <li>L Series: Up to 500 Bar</li>
             <li>S Series: Up to800 Bar</li>
           </ul>
-          <p>Compression Fittings Temperature Ratings</p>
+          <p className='class-text-tube'>Compression Fittings Temperature Ratings</p>
           Compression Fitting Temperature ratings vary in accordance to the body material as per below:
         </div>
-        <div className=' p-3'>
-          <p className='mb-2'><b>Body Material Temperature Rating</b></p>
-          <ul className='ml-4'>
+        <div className='p-3 class-text-tube'>
+          <p className='mb-2 class-text-tube'><b>Body Material Temperature Rating</b></p>
+          <ul className='ml-4 class-text-tube'>
             <li>Stainless Steel:-60oC to 400oC (DIN 17440)</li>
             <li>Steel:-40oC to 120oC (DIN 3859)</li>
             <li>Brass:-60oC to 175oC</li>
           </ul>
           When combing seal material,then temperature ratings of seal may become the limiting factor on the fitting's temperature rating.Kindly refer to the temperature rating below:
         </div>
-        <div className=' p-3'>
-          <p className='mb-2'><b>Elastomer's Temperature Rating</b></p>
-          <ul className='ml-4'>
+        <div className='p-3'>
+          <p className='mb-2 class-text-tube'><b>Elastomer's Temperature Rating</b></p>
+          <ul className='ml-4 class-text-tube'>
             <li>NBR:-35oC to 100oC (Default Option)</li>
             <li>Viton:-25oC to 200oC</li>
             <li>PTFE:-60oCCto 240oC</li>
           </ul>
         </div>
-        <div className=' p-3'>
-          <p className='mb-2'><b>Presure Reduction in temperature</b></p>
+        <div className=' p-3 class-text-tube'>
+          <p className='mb-2 class-text-tube'><b>Presure Reduction in temperature</b></p>
           There are reductios in the nominal pressure(PN) caused by the temperature of the fluid medium or surroundings.
         </div>
-        <div className=' p-3'>
-          <div> Please refer to the table below:</div>
+        <div className='p-3'>
+          <div className='class-text-tube'> Please refer to the table below:</div>
           <div className='my-4'>
             <table className='pressure-table'>
               <tr className='table-row'>

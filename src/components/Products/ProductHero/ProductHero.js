@@ -4,13 +4,13 @@ import { StaticImage } from "gatsby-plugin-image";
 
 function ProductHero() {
   return (
-    <div className="about-us-container">
+    <div className="product-us-container">
       <StaticImage
         src='../../../assests/images/productPage/product_banner.svg'
         srcset="../../../assests/images/productPage/product_banner.svg"
         alt="blurred"
         aria-label="Product Cover"
-        className="about-us-img-hero"
+        className="product-us-img-hero"
       />
     </div>
   )
