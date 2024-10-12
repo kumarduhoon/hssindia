@@ -1,0 +1,14 @@
+.product-spring-gurads-container {
+  width: 100%;
+  padding-top: 60px;
+}
+
+.product-spring-gurads-img-container {
+  width: 100%;
+}
+
+@media (max-width:425px) {
+  .product-spring-gurads-container {
+    padding-top: 50px;
+  }
+}

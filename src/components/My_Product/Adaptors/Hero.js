@@ -1,12 +1,16 @@
 import React from 'react'
+import "./Hero.scss"
 import { StaticImage } from 'gatsby-plugin-image'
 
 function Hero() {
   return (
-    <div className='w-full'>
+    <div className="product-adaptors-container">
       <StaticImage
-        src='../../../../static/adaptor_hero.png'
-        alt='adaptor hero'
+        src='../../../assests/images/productPage/adaptor_hero.png'
+        srcset="../../../assests/images/productPage/adaptor_hero.png"
+        alt="blurred"
+        aria-label="hose fittingd Cover"
+        className="product-adaptors-img-hero"
       />
     </div>
   )

@@ -5,8 +5,11 @@ import hoseAssembliesTwo from "../../../../static/hose_assemblies_two.jpg"
 
 function Content() {
   return (
-    <div className='m-14'>
-      <div class="grid grid-cols-3 gap-4">
+    <div className='mx-4 sm:mx-8 lg:mx-14 my-8'>
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+        <div class="p-4 bg-white shadow">
+          <ListCard />
+        </div>
         <div class="col-span-2 p-4">
           <div className='global-color text-2xl'><b>Hydraulic Hose Assemblies</b></div>
           <div className='my-2'>
@@ -36,9 +39,6 @@ function Content() {
               </div>
             </div>
           </div>
-        </div>
-        <div class="p-4 bg-white shadow">
-          <ListCard />
         </div>
       </div>
     </div>

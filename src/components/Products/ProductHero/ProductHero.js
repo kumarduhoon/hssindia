@@ -2,6 +2,7 @@ import React from 'react'
 import "./ProductHero.scss"
 import { StaticImage } from "gatsby-plugin-image";
 
+
 function ProductHero() {
   return (
     <div className="product-us-container">

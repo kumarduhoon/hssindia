@@ -1,0 +1,11 @@
+.image-con-adaptors {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media (max-width : 768px) {
+  .image-con-adaptors {
+    flex-direction: column;
+    gap: 4px;
+  }
+}

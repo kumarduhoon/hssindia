@@ -1,13 +1,15 @@
 import React from 'react'
 import "./ReachUsHero.scss"
 import { StaticImage } from "gatsby-plugin-image"
-
 function ReachUsHero() {
   return (
-    <div className='w-full'>
+    <div className="hss-reach-us-container">
       <StaticImage
-        src='../../../../static/reach_us_hero.webp'
-        alt='Reach us hero'
+        src='../../../assests/images/reach_us/reach_us.png'
+        srcset="../../../assests/images/reach_us/reach_us.png"
+        alt="blurred"
+        aria-label="hose fittingd Cover"
+        className="hss-reach-us-img-container"
       />
     </div>
   )

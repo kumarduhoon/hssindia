@@ -1,0 +1,14 @@
+.product-tube-clmap-container {
+  width: 100%;
+  padding-top: 60px;
+}
+
+.product-tube-clmap-img-container {
+  width: 100%;
+}
+
+@media (max-width:425px) {
+  .product-tube-clmap-container {
+    padding-top: 50px;
+  }
+}

@@ -1,0 +1,14 @@
+.product-accessories-container {
+  width: 100%;
+  padding-top: 60px;
+}
+
+.product-accessories-img-container {
+  width: 100%;
+}
+
+@media (max-width:425px) {
+  .product-accessories-container {
+    padding-top: 50px;
+  }
+}

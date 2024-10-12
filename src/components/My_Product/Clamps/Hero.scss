@@ -1,0 +1,14 @@
+.product-clamps-container {
+  width: 100%;
+  padding-top: 60px;
+}
+
+.product-clamps-img-hero {
+  width: 100%;
+}
+
+@media (max-width:425px) {
+  .product-clamps-container {
+    padding-top: 50px;
+  }
+}

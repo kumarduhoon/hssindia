@@ -1,0 +1,14 @@
+.product-micro-hose-container {
+  width: 100%;
+  padding-top: 60px;
+}
+
+.product-micro-hose-img-container {
+  width: 100%;
+}
+
+@media (max-width:425px) {
+  .product-micro-hose-container {
+    padding-top: 50px;
+  }
+}

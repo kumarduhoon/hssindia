@@ -1,0 +1,14 @@
+.product-hose-fitting-container {
+  width: 100%;
+  padding-top: 60px;
+}
+
+.product-hose-fitting-img-hero {
+  width: 100%;
+}
+
+@media (max-width:425px) {
+  .product-hose-fitting-container {
+    padding-top: 50px;
+  }
+}

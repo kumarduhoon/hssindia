@@ -1,12 +1,15 @@
 import React from 'react'
+import "./Hero.scss"
 import { StaticImage } from 'gatsby-plugin-image'
-
 function Hero() {
   return (
-    <div className='w-full'>
+    <div className="product-tube-clmap-container">
       <StaticImage
-        src='../../../../static/tube_clamp.png'
-        alt='adaptor hero'
+        src='../../../assests/images/productPage/tube_clamp.png'
+        srcset="../../../assests/images/productPage/tube_clamp.png"
+        alt="blurred"
+        aria-label="hose fittingd Cover"
+        className="product-tube-clmap-img-container"
       />
     </div>
   )
