@@ -4,9 +4,9 @@ import { useLocation } from '@reach/router';
 
 function ListCard() {
   const location = useLocation();
-  const [currentPath, setCurrentPath] = useState('');
+  const [currentPath, setCurrentPath] = React.useState('');
 
-  useEffect(() => {
+  React.useEffect(() => {
     if (location) setCurrentPath(location.pathname);
   }, [location]);
   return (
