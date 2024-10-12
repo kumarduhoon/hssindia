@@ -28,7 +28,7 @@ export default ListCard
 const data = [
   {
     name: "Hose Fittings",
-    path: '/hose-fittings/'
+    path: '/hose-fittings'
   },
   {
     name: "Adaptors",
