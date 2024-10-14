@@ -6,8 +6,8 @@ function Hero() {
   return (
     <div className="product-spring-gurads-container">
       <StaticImage
-        src='../../../assests/images/productPage/ball_valves_and_QRC.png'
-        srcset="../../../assests/images/productPage/ball_valves_and_QRC.png"
+        src='../../../assests/images/productPage/springuards_and_spiral_sleeves.png'
+        srcset="../../../assests/images/productPage/springuards_and_spiral_sleeves.png"
         alt="blurred"
         aria-label="hose fittingd Cover"
         className="product-spring-gurads-img-container"

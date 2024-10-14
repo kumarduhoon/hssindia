@@ -6,8 +6,8 @@ function Hero() {
   return (
     <div className="product-crimping-machine-container">
       <StaticImage
-        src='../../../assests/images/productPage/spools.png'
-        srcset="../../../assests/images/productPage/spools.png"
+        src='../../../assests/images/productPage/hose_crimping_machine.png'
+        srcset="../../../assests/images/productPage/hose_crimping_machine.png"
         alt="blurred"
         aria-label="hose fittingd Cover"
         className="product-crimping-machine-img-container"

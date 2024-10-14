@@ -2,12 +2,145 @@
   background-color: #fcf0e6;
 }
 
-.input-tag-custom {
-  width: 17rem;
-}
 
 .custom-btn-contact-form {
   background-color: #ff7300;
+  border: 2px solid #FF6600;
   color: white;
   font-weight: bold;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.custom-btn-contact-form:hover {
+  background-color: white;
+  color: #FF6600;
+}
+
+
+
+.lable-common-css {
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.09px;
+  text-align: left;
+  padding: 0px 0px 0px 5px;
+}
+
+.head_contact_us {
+  font-family: "DM Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30.56px;
+  text-align: left;
+  color: #FF6600;
+}
+
+.text_contact_us {
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: left;
+  margin: 15px 5px;
+}
+
+.office_time_con {
+  background-color: #FF6600;
+  padding: 1.25rem;
+  border-radius: 5px;
+}
+
+.office_time_heading {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  text-align: center;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.time_day_con {
+  display: flex;
+  justify-content: space-around;
+}
+
+.day_con {
+  color: white;
+}
+
+.time_con {
+  color: white;
+}
+
+.social_media_con {
+  margin-top: 50px;
+  border-top: 1px solid #000000;
+  padding: 20px 10px;
+}
+
+.social_media_text_con {
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25.47px;
+  text-align: left;
+  color: #FF7300;
+}
+
+.social_media_handle_con {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.social_media_insta {
+  margin-right: 15px;
+}
+
+.social_media_twitter {
+  margin-right: 15px;
+}
+
+@media (max-width : 425px) {
+  .info-con-phone-email {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gap-mobile-device {
+    margin-top: 40px;
+  }
+
+  .input-tag-custom-email-phone {
+    width: 100%;
+  }
+
+  .custom-btn-contact-form {
+    padding: 0.75rem 6rem
+  }
+
+  .text-con-ask {
+    font-size: 20px;
+  }
+}
+
+@media (max-width : 375px) {
+  .custom-btn-contact-form {
+    padding: 0.75rem 4rem
+  }
+
+  .text-con-ask {
+    font-size: 18px;
+  }
+}
+
+@media (max-width : 325px) {
+  .custom-btn-contact-form {
+    padding: 0.75rem 2rem
+  }
+
+  .text-con-ask {
+    font-size: 16px;
+  }
 }

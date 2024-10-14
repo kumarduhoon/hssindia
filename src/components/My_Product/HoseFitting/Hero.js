@@ -6,8 +6,8 @@ function Hero() {
   return (
     <div className="product-hose-fitting-container">
       <StaticImage
-        src='../../../assests/images/productPage/hose_fitting_hero.png'
-        srcset="../../../assests/images/productPage/hose_fitting_hero.png"
+        src='../../../assests/images/productPage/hose_Fitting.png'
+        srcset="../../../assests/images/productPage/hose_Fitting.png"
         alt="blurred"
         aria-label="hose fittingd Cover"
         className="product-hose-fitting-img-hero"

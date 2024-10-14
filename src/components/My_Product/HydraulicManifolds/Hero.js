@@ -5,8 +5,8 @@ function Hero() {
   return (
     <div className="product-hydraulic-mainfolds-container">
       <StaticImage
-        src='../../../assests/images/productPage/ball_valves_and_QRC.png'
-        srcset="../../../assests/images/productPage/ball_valves_and_QRC.png"
+        src='../../../assests/images/productPage/mainfolds.png'
+        srcset="../../../assests/images/productPage/mainfolds.png"
         alt="blurred"
         aria-label="hose fittingd Cover"
         className="product-hydraulic-mainfolds-img-container"

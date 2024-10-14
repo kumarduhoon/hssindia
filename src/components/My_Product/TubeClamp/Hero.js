@@ -5,8 +5,8 @@ function Hero() {
   return (
     <div className="product-tube-clmap-container">
       <StaticImage
-        src='../../../assests/images/productPage/tube_clamp.png'
-        srcset="../../../assests/images/productPage/tube_clamp.png"
+        src='../../../assests/images/productPage/tubeClamps.png'
+        srcset="../../../assests/images/productPage/tubeClamps.png"
         alt="blurred"
         aria-label="hose fittingd Cover"
         className="product-tube-clmap-img-container"

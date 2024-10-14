@@ -1,157 +1,100 @@
 import React from 'react'
 import "./ReachUsContact.scss"
-import reactUs from "../../../../static/reach_us_catch.png"
-import address from "../../../../static/address.png"
-import email from "../../../../static/email.png"
-import phone from "../../../../static/phone.png"
-import formName from "../../../../static/form_name.svg"
-import formEmail from "../../../../static/form_email.svg"
-import formPhone from "../../../../static/form_arrow.svg"
-import formWirte from "../../../../static/form_write.svg"
-import formLang from "../../../../static/form_down.svg"
+import { Link } from 'gatsby'
+import insta from "../../../assests/images/reach_us/insta.png"
+import twitter from "../../../assests/images/reach_us/twitter.png"
+import linkedin from "../../../assests/images/reach_us/linkedin.png"
+
+
 
 function ReachUsContact() {
   return (
-    <div className='grid grid-cols-2 gap-10 my-14 mx-16'>
-      <div className='container p-2'>
-        <div className='container max-w-full'>
-          <img
-            src={reactUs}
-            alt='reach us contact'
-            className='w-full'
-          />
+    <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 my-14 mx-6 lg:mx-16'>
+      <div className='container  p-6'>
+        <div className='head_contact_us'>Contact Us</div>
+        <div className='text_contact_us'>
+          Share your thoughts, suggestions and questions with us.
+          We will get back to you as soon as possible.
         </div>
-        <div className='conatiner text-6xl my-5'>
-          <b>Find us here. Make real results happen.</b>
-        </div>
-        <div className='grid grid-cols-2 gap-5 mt-8'>
-          <div className='container'>
-            <div className='flex justify-between'>
-              <div>
-                Plot no. 382, Sec.- 68, IMT<br /> Faridabad, Haryana, India
-              </div>
-              <div >
-                <img
-                  src={address}
-                  alt="address img"
-                  className=" mt-1 ml-3 w-7"
-                />
-              </div>
-            </div>
-            <div className='flex justify-between mt-4'>
-              <div>
-                sales@hssindia.in
-              </div>
-              <div >
-                <img
-                  src={email}
-                  alt="email img"
-                  className="ml-3 w-8"
-                />
-              </div>
-            </div>
-            <div className='flex justify-between mt-4'>
-              <div>
-                +91-9667 73 62 68
-              </div>
-              <div >
-                <img
-                  src={phone}
-                  alt="phone img"
-                  className="ml-3 w-5"
-                />
-              </div>
-            </div>
-            <div className='flex justify-between mt-4'>
-              <div>
-                +91-129-4057836
-              </div>
-              <div >
-                <img
-                  src={phone}
-                  alt="phone img"
-                  className="ml-3 w-5"
-                />
-              </div>
-            </div>
+        <div className='office_time_con'>
+          <div className='office_time_heading'>Opening Hours</div>
+          <div className='time_day_con'>
+            <div className='day_con'><b>Mon - Sat</b></div>
+            <div className='time_con'><b>9:30 am - 18:30 pm</b></div>
           </div>
-          <div className='container'>
-            <div className='p-5 bg-zinc-900 rounded-md'>
-              <div className='text-3xl text-white text-center'> Opening Hours</div>
-              <div className='flex justify-between mt-6'><p className='text-white text-center'>Mon - Sat </p> <p className='text-white text-center'> 9:30 - 18:30</p></div>
-              <div className='flex justify-between my-6'><p className='text-white text-center'>Sunday</p> <p className='text-orange-500 text-center'>Off - Day</p></div>
-            </div>
-
+          <div className='time_day_con mt-6'>
+            <div className='day_con'><b>Sunday</b></div>
+            <div className='time_con' ><b>Off - Day</b></div>
+          </div>
+        </div>
+        <div className='social_media_con'>
+          <div className='social_media_text_con'>Follow Us</div>
+          <div className='social_media_handle_con'>
+            <Link to="/">
+              <img
+                src={insta}
+                alt='insta'
+                className='social_media_insta'
+              />
+            </Link>
+            <Link to="/">
+              <img
+                src={twitter}
+                alt='twitter'
+                className='social_media_twitter'
+              />
+            </Link>
+            <Link to="/">
+              <img
+                src={linkedin}
+                alt='linkedin'
+                className='social_media_linkedin'
+              />
+            </Link>
           </div>
         </div>
       </div>
-      <div className='container p-2'>
+      <div className='container p-6 rounded-lg shadow-lg'>
         <div className="container form-custom-class px-4 py-8">
           <form>
-            <div className='container text-3xl text-center pb-9'><b>Ask Question or Get Quote</b></div>
-            <div className='container flex justify-around'>
-              <div className='container relative'>
-                <input
-                  className='h-12 w-64 p-2 bg-white rounded'
-                  placeholder='Full Name'
-                />
-                <img
-                  src={formName}
-                  alt='name'
-                  className=' absolute top-3 right-6'
-                />
-              </div>
-              <div className='container relative'>
-                <input
-                  className='h-12 w-64 p-2 bg-white input-tag-custom rounded'
-                  placeholder='Email Address'
-                />
-                <img
-                  src={formEmail}
-                  alt='email'
-                  className=' absolute top-3 right-6'
-                />
-              </div>
+            <div className='container text-3xl text-center pb-9 text-con-ask'><b>Ask Question or Get Quote</b></div>
+            <div className='container'>
+              <label htmlFor='name_id' className='lable-common-css'>Full Name</label>
+              <input
+                className='h-12 w-full p-2 bg-white rounded'
+                placeholder='Enter Your full Name'
+                id="name_id"
+              />
             </div>
-            <div className='container flex justify-around mt-14'>
-              <div className='container relative'>
+            <div className='container flex justify-around mt-14 info-con-phone-email'>
+              <div className='container'>
+                <label htmlFor="phone_id" className='lable-common-css'>Phone Number</label>
                 <input
-                  className='h-12 w-64 p-2 bg-white  rounded'
+                  className='h-12 w-64 p-2 bg-white rounded input-tag-custom-email-phone'
                   placeholder='Phone Number'
-                />
-                <img
-                  src={formPhone}
-                  alt='phone'
-                  className=' absolute top-3 right-6'
+                  id="phone_id"
                 />
               </div>
-              <div className='container relative'>
+              <div className='container gap-mobile-device'>
+                <label htmlFor='email_id' className='lable-common-css'>Email Addreess</label>
                 <input
-                  className='h-12 w-64 p-2 bg-white rounded input-tag-custom'
-                  placeholder='Language'
-                />
-                <img
-                  src={formLang}
-                  alt='lang'
-                  className=' absolute top-4 right-3'
+                  className='h-12 w-64 p-2 bg-white rounded input-tag-custom input-tag-custom-email-phone'
+                  placeholder='E-mail Address'
+                  id="email_id"
                 />
               </div>
             </div>
             <div className='container mt-14 relative'>
+              <label htmlFor='message_id' className='lable-common-css'>Message</label>
               <textarea
-                placeholder='Questions'
+                placeholder='Enter Your Message'
                 rows="4"
-                cols="63"
-                className='p-2'
-              />
-              <img
-                src={formWirte}
-                alt='question'
-                className=' absolute top-2 right-4'
+                className='p-2 w-full'
+                id='message_id'
               />
             </div>
             <div className='container mt-12 flex justify-center'>
-              <button className='custom-btn-contact-form py-3 rounded px-56'>
+              <button className='py-3 rounded px-48 custom-btn-contact-form'>
                 Get Quote
               </button>
             </div>
