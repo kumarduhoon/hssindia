@@ -6,8 +6,8 @@ function Hero() {
   return (
     <div className="product-micro-hose-container">
       <StaticImage
-        src='../../../assests/images/productPage/ball_valves_and_QRC.png'
-        srcset="../../../assests/images/productPage/ball_valves_and_QRC.png"
+        src='../../../assests/images/productPage/microbore_hose.png'
+        srcset="../../../assests/images/productPage/microbore_hose.png"
         alt="blurred"
         aria-label="hose fittingd Cover"
         className="product-micro-hose-img-container"

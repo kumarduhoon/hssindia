@@ -1,7 +1,5 @@
 import React from 'react'
 import ListCard from '../Accessories/ListCard'
-import microboreFittingsOne from "../../../assests/images/productPage/microbore_one.jpg"
-import microboreFittingsTwo from "../../../assests/images/productPage/microbore_two.jpg"
 import microboreFittingsThree from "../../../assests/images/productPage/microbore_three.png"
 import microboreFittingsFour from "../../../assests/images/productPage/microbore_four.jpg"
 function Content() {
@@ -22,18 +20,6 @@ function Content() {
           </div>
           <div className='my-5'>
             <div className='flex justify-evenly'>
-              <div className='mr-2'>
-                <img
-                  src={microboreFittingsOne}
-                  alt="box one"
-                />
-              </div>
-              <div className='mr-2 ml-2'>
-                <img
-                  src={microboreFittingsTwo}
-                  alt="box one"
-                />
-              </div>
               <div className='mr-2 ml-2'>
                 <img
                   src={microboreFittingsThree}

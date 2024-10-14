@@ -3,8 +3,8 @@ import JobAccordion from "./JobAccordion"
 
 function Contect() {
   return (
-    <div className='m-12'>
-      <div className='p-5 overflow-hidden max-w-full'>
+    <div className=' m-4 lg:m-12'>
+      <div className='lg:p-5 p-2 overflow-hidden max-w-full'>
         <div className='my-5 global-color text-3xl'><b>Current Opening</b></div>
         <JobAccordion />
         <div className='my-5'>

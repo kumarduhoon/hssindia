@@ -6,10 +6,10 @@ function Hero() {
   return (
     <div className="product-clamps-container">
       <StaticImage
-        src='../../../assests/images/productPage/tubeClamps.png'
-        srcset="../../../assests/images/productPage/tubeClamps.png"
+        src='../../../assests/images/productPage/clamps.png'
+        srcset="../../../assests/images/productPage/clamps.png"
         alt="blurred"
-        aria-label="hose fittingd Cover"
+        aria-label="hose clamp Cover"
         className="product-clamps-img-hero"
       />
     </div>

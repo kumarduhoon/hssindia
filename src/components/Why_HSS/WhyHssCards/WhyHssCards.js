@@ -3,51 +3,63 @@ import "./WhyHssCards.scss"
 
 function WhyHssCards({ data }) {
   return (
-    <div className='py-5 px-5'>
-      <div className=' grid max-w-5xl m-auto mt-16 grid-cols-3 gap-10'>
-        <div className='relative card_custom_css rounded p-5 pt-12'>
-          <div className='absolute max-w-14 card_image_1 left-32'>
+    <div className="py-5 px-5">
+      <div className="grid max-w-5xl m-auto mt-16 gap-10 
+                  grid-cols-1  lg:grid-cols-3">
+        {/* Card 1 */}
+        <div className="relative card_custom_css rounded-lg shadow-lg p-5 pt-16 bg-gray-300">
+          <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16">
             <img
               src={data.card_one.img}
-              alt='guarantee'
+              alt="guarantee"
+              className="w-full h-full object-contain"
             />
           </div>
-          <div>
-            <div className='text-orange-600 text-lg mb-2 text-center'>{data.card_one.head}</div>
-            <p className='text-center text-why-hss'>
-              {data.card_one.para1}
-            </p>
-            <p className='mt-3 text-center text-why-hss'>
-              {data.card_one.para2}
-            </p>
+          <div className="text-center">
+            <div className="text-orange-600 text-lg font-semibold mb-2">
+              {data.card_one.head}
+            </div>
+            <p className="text-gray-600 text-sm">{data.card_one.para1}</p>
+            <p className="mt-3 text-gray-600 text-sm">{data.card_one.para2}</p>
           </div>
         </div>
-        <div className='relative card_custom_css rounded p-5 pt-12'>
-          <div className='absolute card_image max-w-14 left-32'>
+
+        {/* Card 2 */}
+        <div className="relative card_custom_css rounded-lg shadow-lg p-5 pt-16 bg-gray-300">
+          <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16">
             <img
               src={data.card_two.img}
-              alt='guarantee'
+              alt="guarantee"
+              className="w-full h-full object-contain"
             />
           </div>
-          <div>
-            <div className='text-orange-600 text-lg mb-2 text-center'>{data.card_two.head}</div>
-            <p className='text-center text-why-hss'>{data.card_two.para1}</p>
+          <div className="text-center">
+            <div className="text-orange-600 text-lg font-semibold mb-2">
+              {data.card_two.head}
+            </div>
+            <p className="text-gray-600 text-sm">{data.card_two.para1}</p>
           </div>
         </div>
-        <div className='relative card_custom_css rounded p-5 pt-12'>
-          <div className='absolute card_image_7 max-w-14 left-32'>
+
+        {/* Card 3 */}
+        <div className="relative card_custom_css rounded-lg shadow-lg p-5 pt-16 bg-gray-300">
+          <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16">
             <img
               src={data.card_three.img}
-              alt='guarantee'
+              alt="guarantee"
+              className="w-full h-full object-contain"
             />
           </div>
-          <div>
-            <div className='text-orange-600 text-lg mb-2 text-center'>{data.card_three.head}</div>
-            <p className='text-center text-why-hss'>{data.card_three.para1}</p>
+          <div className="text-center">
+            <div className="text-orange-600 text-lg font-semibold mb-2">
+              {data.card_three.head}
+            </div>
+            <p className="text-gray-600 text-sm">{data.card_three.para1}</p>
           </div>
         </div>
       </div>
     </div>
+
   )
 }
 
