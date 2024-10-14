@@ -2,13 +2,12 @@ import React from 'react'
 import WhyHSSHero from "../../components/Why_HSS/WhyHssHero/WhyHssHeros"
 import WhyHssCards from "../../components/Why_HSS/WhyHssCards/WhyHssCards"
 import WhyHssVerticalCard from "../../components/Why_HSS/whyHssVertical/WhyHssVerticalCard"
-import hssOne from "../../../static/why_hss_1.png"
-import hssTwo from "../../../static/guarantee.png"
-import hssthree from "../../../static/why_hss_7.png"
-import hssFour from "../../../static/why_hss_10.png"
-import hssFive from "../../../static/why_hss_11.png"
-import hssSix from "../../../static/why_hss_1.png"
-
+import hssOne from "../../assests/images/whyhss/why_hss_1.png"
+import hssTwo from "../../assests/images/whyhss/guarantee.png"
+import hssthree from "../../assests/images/whyhss/why_hss_7.png"
+import hssFour from "../../assests/images/whyhss/why_hss_10.png"
+import hssFive from "../../assests/images/whyhss/why_hss_11.png"
+import hssSix from "../../assests/images/whyhss/why_hss_1.png"
 function WhyHss() {
   return (
     <>

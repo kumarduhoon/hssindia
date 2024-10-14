@@ -67,24 +67,24 @@ function ReachUsContact() {
               />
             </div>
             <div className='container flex justify-around mt-14 info-con-phone-email'>
-              <div className='container'>
+              <div className='mr-3'>
                 <label htmlFor="phone_id" className='lable-common-css'>Phone Number</label>
                 <input
-                  className='h-12 w-64 p-2 bg-white rounded input-tag-custom-email-phone'
+                  className='h-12 w-full p-2 bg-white rounded input-tag-custom-email-phone'
                   placeholder='Phone Number'
                   id="phone_id"
                 />
               </div>
-              <div className='container gap-mobile-device'>
+              <div className='ml-3'>
                 <label htmlFor='email_id' className='lable-common-css'>Email Addreess</label>
                 <input
-                  className='h-12 w-64 p-2 bg-white rounded input-tag-custom input-tag-custom-email-phone'
+                  className='h-12 w-full p-2 bg-white rounded input-tag-custom input-tag-custom-email-phone'
                   placeholder='E-mail Address'
                   id="email_id"
                 />
               </div>
             </div>
-            <div className='container mt-14 relative'>
+            <div className='mt-14'>
               <label htmlFor='message_id' className='lable-common-css'>Message</label>
               <textarea
                 placeholder='Enter Your Message'

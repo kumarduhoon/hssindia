@@ -1,7 +1,7 @@
 import React from 'react'
 import ListCard from '../Accessories/ListCard'
-import hoseAssembliesOne from "../../../../static/hose_assemblies_one.png"
-import hoseAssembliesTwo from "../../../../static/hose_assemblies_two.jpg"
+import hoseAssembliesOne from "../../../assests/images/productPage/hose_assemblies_one.png"
+import hoseAssembliesTwo from "../../../assests/images/productPage/hose_assemblies_two.jpg"
 
 function Content() {
   return (

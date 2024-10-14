@@ -1,7 +1,8 @@
 import React from 'react'
 import './WhyHssVerticalCard.scss'
-import whyHssTwo from "../../../../static/why_hss_5.png"
-import whyHssThree from "../../../../static/why_hss_8.png"
+import whyHssTwo from "../../../assests/images/whyhss/why_hss_5.png"
+import whyHssThree from "../../../assests/images/whyhss/why_hss_8.png"
+
 
 function WhyHssVerticalCard() {
   return (

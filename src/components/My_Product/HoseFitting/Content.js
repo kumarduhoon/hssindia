@@ -1,10 +1,10 @@
 import React from 'react'
 import ListCard from '../Accessories/ListCard'
-import hoseFittingOne from "../../../../static/hose_fitting_one.jpg"
-import hoseFittingTwo from "../../../../static/hose_fitting_two.jpg"
-import hoseFittingThree from "../../../../static/hose_fitting_three.jpg"
-import hoseFittingFour from "../../../../static/hose_fitting_four.jpg"
-import hoseFittingFive from "../../../../static/hose_fitting_five.jpg"
+import hoseFittingOne from "../../../assests/images/productPage/hose_fitting_one.jpg"
+import hoseFittingTwo from "../../../assests/images/productPage/hose_fitting_two.jpg"
+import hoseFittingThree from "../../../assests/images/productPage/hose_fitting_three.jpg"
+import hoseFittingFour from "../../../assests/images/productPage/hose_fitting_four.jpg"
+import hoseFittingFive from "../../../assests/images/productPage/hose_fitting_five.jpg"
 
 function Content() {
   return (

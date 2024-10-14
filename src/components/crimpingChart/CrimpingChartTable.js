@@ -5,7 +5,7 @@ function CrimpingChartTable() {
   return (
     <div className='flex justify-center my-6 p-2'>
       <StaticImage
-        src='../../../static/chart.webp'
+        src='../../assests/images/whyhss/chart.webp'
         alt='chart'
       />
     </div>
