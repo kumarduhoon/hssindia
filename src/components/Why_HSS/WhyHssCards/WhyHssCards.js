@@ -7,7 +7,7 @@ function WhyHssCards({ data }) {
       <div className="grid max-w-5xl m-auto mt-16 gap-10 
                   grid-cols-1  lg:grid-cols-3">
         {/* Card 1 */}
-        <div className="relative card_custom_css rounded-lg shadow-lg p-5 pt-16 bg-gray-300">
+        <div className="relative card_custom_css rounded-lg shadow-lg p-5 pt-16 card-gb-color card-gb-color">
           <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16">
             <img
               src={data.card_one.img}
@@ -25,7 +25,7 @@ function WhyHssCards({ data }) {
         </div>
 
         {/* Card 2 */}
-        <div className="relative card_custom_css rounded-lg shadow-lg p-5 pt-16 bg-gray-300">
+        <div className="relative card_custom_css rounded-lg shadow-lg p-5 pt-16 card-gb-color">
           <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16">
             <img
               src={data.card_two.img}
@@ -42,7 +42,7 @@ function WhyHssCards({ data }) {
         </div>
 
         {/* Card 3 */}
-        <div className="relative card_custom_css rounded-lg shadow-lg p-5 pt-16 bg-gray-300">
+        <div className="relative card_custom_css rounded-lg shadow-lg p-5 pt-16 card-gb-color">
           <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16">
             <img
               src={data.card_three.img}

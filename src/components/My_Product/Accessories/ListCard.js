@@ -11,16 +11,13 @@ function ListCard() {
     if (location) setCurrentPath(location.pathname);
   }, [location]);
 
-  console.log("currentPath", currentPath)
   return (
     <div className='my-5 mx-3'>
       <div className='w-full bg-orange-600 text-white text-center rounded-md py-3 text-xl'>
         <b>Our Products</b>
       </div>
       {data.map(function (item) {
-        console.log("item.path", item.path)
         const isActive = currentPath.replace(/\/$/, '') === item.path.replace(/\/$/, '');
-        console.log("isActive", isActive)
         return (
           <div className={`flex justify-between my-4 mx-6 pb-1 border-b-2 border-black ${isActive ? 'text-orange-600' : ''} hover:text-orange-600 cursor-pointer`} key={item.name}>
 

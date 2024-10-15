@@ -9,7 +9,7 @@ function WhyHssVerticalCard() {
     <>
       <div className="py-5 px-5">
         <div className="max-w-5xl m-auto mt-16">
-          <div className="relative card_custom_css rounded-lg shadow-lg p-5 bg-gray-300">
+          <div className="relative card_custom_css rounded-lg shadow-lg p-5 card-gb-color">
             <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20">
               <img
                 src={whyHssTwo}
@@ -47,7 +47,7 @@ function WhyHssVerticalCard() {
           </div>
         </div>
         <div className="max-w-5xl m-auto mt-16">
-          <div className="relative card_custom_css rounded-lg shadow-lg p-5 bg-gray-300">
+          <div className="relative card_custom_css rounded-lg shadow-lg p-5 card-gb-color">
             <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20">
               <img
                 src={whyHssThree}
