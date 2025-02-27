@@ -8,9 +8,19 @@ import hssthree from "../../assests/images/whyhss/why_hss_7.png"
 import hssFour from "../../assests/images/whyhss/why_hss_10.png"
 import hssFive from "../../assests/images/whyhss/why_hss_11.png"
 import hssSix from "../../assests/images/whyhss/why_hss_1.png"
+import { Helmet } from 'react-helmet'
 function WhyHss() {
   return (
     <>
+      <Helmet>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="Hydraulic Sealing Solutions" />
+        <meta name="keywords" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>HSS - Hydraulic Sealing Solutions</title>
+        <link rel="icon" type="image/ico" href="/favicon.ico" />
+      </Helmet>
       <WhyHSSHero />
       <WhyHssCards
         data={cardData1}

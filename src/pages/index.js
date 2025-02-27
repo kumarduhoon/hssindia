@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import HomeHero from "../components/Home/Home_hero"
 import HomeAbout from "../components/Home/HomeAbout/HomeAbout";
 import HomeMarket from "../components/Home/HomeMarket/HomeMarket"
@@ -14,6 +15,15 @@ function Home() {
 
   return (
     <>
+      <Helmet>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="Hydraulic Sealing Solutions" />
+        <meta name="keywords" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>HSS - Hydraulic Sealing Solutions</title>
+        <link rel="icon" type="image/ico" href="/favicon.ico" />
+      </Helmet>
       <HomeHero />
       <HomeAbout />
       <ProductSlider />
