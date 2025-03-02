@@ -12,7 +12,7 @@ const Counter = ({ target }) => {
     if (inView) {
       let start = 0;
       const end = parseInt(target);
-      const duration = 2000;
+      const duration = 500;
       const stepTime = Math.abs(Math.floor(duration / end));
 
       const timer = setInterval(() => {

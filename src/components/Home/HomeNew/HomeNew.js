@@ -3,14 +3,9 @@ import Slider from 'react-slick';
 import './HomeNew.scss';
 import MobileViewNews from "./MobileViewNews"
 import { Link } from 'gatsby';
-import { navigate } from "gatsby"
-import ProductOne from "../../../assests/images/homepage/productOne.png"
-import ProductTwo from "../../../assests/images/homepage/productTwo.png"
-import ProductThree from "../../../assests/images/homepage/productThree.png"
-import ProductFour from "../../../assests/images/homepage/productFour.png"
-import ProductFive from "../../../assests/images/homepage/productFive.png"
-import ProductSix from "../../../assests/images/homepage/productSix.png"
-
+import catalogImg from "../../../assests/images/homepage/catalog.jpg"
+import industryOutlookImg from "../../../assests/images/homepage/industry_outlook.png"
+import awardsImg from "../../../assests/images/homepage/awards.png"
 const NextArrow = ({ onClick }) => {
   return (
     <div className="arrow-new next-arrow-new" onClick={onClick}>
@@ -33,45 +28,45 @@ const HomeNew = () => {
   const products = [
     {
       id: 1,
-      title: 'Hose Fittings',
-      description: 'Fittings are designed for mounting on to hydraulic hose. The fitting must be compatible to the hose in order to withstand the rigors encountered in extreme working conditions...',
-      image: ProductOne,
-      url: "/hose-fittings"
+      title: 'HSS-India Catalog',
+      description: 'HSS CNG Hose Assemblies are designed for dispensing compressed natural gas at workingpressures to 5000 psi. Constructed of high strength conductive polymer core tubing todissipate static charge .',
+      image: catalogImg,
+      url: "/hssIndia_catalog_booklet.pdf"
     },
     {
       id: 2,
-      title: 'Adaptors',
+      title: 'HSS-India Award',
       description: 'Hydraulic Sealing Solutions manufactures an extensive range of adaptors in excess of 3000 different variations. We make adaptors to international standards i.e. JIC, SAE, DIN, BSP,ORFS, BSPT',
-      image: ProductTwo,
-      url: "/adaptors"
+      image: awardsImg,
+      url: "/awards.pdf"
     },
     {
       id: 3,
-      title: 'Hose Assemblies',
+      title: 'HSS-India Outlooks',
       description: 'Hydraulic hose assemblies are used to transmit forces by means of oil pressure, and consist of flexible hydraulic hoses to which fittings are attached at either end to ensure safe...',
-      image: ProductThree,
-      url: '/hose-assemblies'
+      image: industryOutlookImg,
+      url: 'static/industry_outlook.pdf'
     },
     {
       id: 4,
-      title: 'Tube Fittings',
-      description: 'We are renowned for manufacturing wide range of Hydraulic Fittings as per National and International Standards (DIN 2353). These fittings are widely appreciated for their low maintenanc..',
-      image: ProductFour,
-      url: "/tube-fitting"
+      title: 'HSS-India Catalog',
+      description: 'HSS CNG Hose Assemblies are designed for dispensing compressed natural gas at workingpressures to 5000 psi. Constructed of high strength conductive polymer core tubing todissipate static charge .',
+      image: catalogImg,
+      url: "static/hssIndia_catalog_booklet.pdf"
     },
     {
       id: 5,
-      title: 'SAE Flanges',
-      description: 'We manufacture an array of SAE flanges and Hydraulic flanges which corresponds to relevant international standards. These flanges find application in industries where flanged joints...',
-      image: ProductFive,
-      url: "/sae-flanges"
+      title: 'HSS-India Award',
+      description: 'Hydraulic Sealing Solutions manufactures an extensive range of adaptors in excess of 3000 different variations. We make adaptors to international standards i.e. JIC, SAE, DIN, BSP,ORFS, BSPT',
+      image: awardsImg,
+      url: "/awards.pdf"
     },
     {
       id: 6,
-      title: 'Ball valves and QRC',
-      description: 'Hydraulic Sealing Solutions offers High Pressure Ball Valves to suit a wide range of applications including mobile plant and industrial equipment. These valves should not be used as flow...',
-      image: ProductSix,
-      url: "/ball-valves-qrc"
+      title: 'HSS-India Outlooks',
+      description: 'Hydraulic hose assemblies are used to transmit forces by means of oil pressure, and consist of flexible hydraulic hoses to which fittings are attached at either end to ensure safe...',
+      image: industryOutlookImg,
+      url: '/industry_outlook.pdf'
     },
   ];
 
@@ -130,7 +125,7 @@ const HomeNew = () => {
               <div className='new-bg-img-hss'>
                 <h2><b>{product.title}</b></h2>
                 <p className='new-description'>{product.description}</p>
-                {activeIndex === index ? <div className='new-bg-img-hss-url-active'>+</div> : <Link to={product.url}><div className='new-bg-img-hss-url-inactive'>+</div></Link>}
+                {activeIndex === index ? <a href={product.url} target="_blank" rel="noopener noreferrer"><div className='new-bg-img-hss-url-active'>+</div></a> : <a href={product.url} target="_blank" rel="noopener noreferrer"><div className='new-bg-img-hss-url-inactive'>+</div></a>}
               </div>
             </div>
           ))}
