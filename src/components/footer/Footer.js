@@ -7,7 +7,7 @@ import location from "../../assests/images/homepage/location.svg"
 import insta from "../../assests/images/homepage/insta.svg"
 import linkdin from "../../assests/images/homepage/linkdin.svg"
 import email from "../../assests/images/homepage/email.svg"
-import mob from "../../assests/images/homepage/mob.svg"
+// import mob from "../../assests/images/homepage/mob.svg"
 import phone from "../../assests/images/homepage/phone.svg"
 
 function Footer() {
@@ -72,21 +72,21 @@ function Footer() {
                             />
                             Plot no. 382, Sec - 68, IMT Faridabad, Haryana, India
                         </p>
-                        <p className="mb-2 flex items-center">
+                        {/* <p className="mb-2 flex items-center">
                             <img
                                 src={mob}
                                 alt="mob"
                                 className="img-card-margin-left"
                             />
-                            +91-129-4065736
-                        </p>
+                            +91-99586 29977
+                        </p> */}
                         <p className="mb-2 flex items-center">
                             <img
                                 src={phone}
                                 alt="phone"
                                 className="img-card-margin-left"
                             />
-                            +91-987-163-6748
+                            +91-99586 29977
                         </p>
                         <p className="mb-2 flex items-center">
                             <img
